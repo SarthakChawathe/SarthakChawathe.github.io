@@ -207,7 +207,7 @@ img {
     color: var(--first-color);
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 819px) {
     .nav__menu {
         position: fixed;
         bottom: -100%;
