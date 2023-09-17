@@ -1277,6 +1277,20 @@ img {
         justify-content: center;
     }
 
+    /* Additional adjustments for medium screens */
+    .footer_bg {
+        /* Make sure the background image covers the entire container */
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    
+    /* Ensure there's no unwanted margin or padding on the body or HTML */
+    body, html {
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden; /* Prevent horizontal scrolling */
+    }
 }
 
 @media screen and (min-width: 768px) {
@@ -1449,6 +1463,10 @@ img {
     .footer__copy {
         margin-top: 4.5rem;
     }
+
+   
+    
+    
 
 }
 
