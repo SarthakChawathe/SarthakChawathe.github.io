@@ -207,7 +207,7 @@ img {
     color: var(--first-color);
 }
 
-@media screen and (max-width: 819px) {
+@media screen and (max-width: 767px) {
     .nav__menu {
         position: fixed;
         bottom: -100%;
@@ -1453,7 +1453,7 @@ img {
 }
 
 /* For large devices */
-@media screen and (min-width: 910px) {
+@media screen and (min-width: 1024px) {
     .header,
     .main,
     .footer__container {
