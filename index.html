@@ -1,1556 +1,2291 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>vCard - Personall Portfolio</title>
-
-  <!--
-    - favicon
-  -->
-  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
-
-  <!--
-    - custom css link
-  -->
-  <link rel="stylesheet" href="./assets/css/style.css">
-
-  <!--
-    - google font link
-  -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
-</head>
-
-<body>
-
-  <!--
-    - #MAIN
-  -->
-
-  <main>
-
-    <!--
-      - #SIDEBAR
-    -->
-
-    <aside class="sidebar" data-sidebar>
-
-      <div class="sidebar-info">
-
-        <figure class="avatar-box">
-          <img src="./assets/images/my-avatar.png" alt="Sarthak Chawathe" width="80">
-        </figure>
-
-        <div class="info-content">
-          <h1 class="name" title="Sarthak Chawathe">Sarthak Chawathe</h1>
-
-          <p class="title">Data Enthusiast</p>
-        </div>
-
-        <button class="info_more-btn" data-sidebar-btn>
-          <span>Show Contacts</span>
-
-          <ion-icon name="chevron-down"></ion-icon>
-        </button>
-
-      </div>
-
-      <div class="sidebar-info_more">
-
-        <div class="separator"></div>
-
-        <ul class="contacts-list">
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="mail-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Email</p>
-
-              <a href="mailto:sarthak.chawathe2012@gmail.com" class="contact-link">sarthak.chawathe2012@gmail.com</a>
-            </div>
-
-          </li>
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="phone-portrait-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Phone</p>
-
-              <a href="tel:+12133522795" class="contact-link">+1 (812) 837-6816</a>
-            </div>
-
-          </li>
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="calendar-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Birthday</p>
-
-              <time datetime="1982-06-23">January 06, 1997</time>
-            </div>
-
-          </li>
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="location-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Location</p>
-
-              <address>Bloomington, Indiana, USA</address>
-            </div>
-
-          </li>
-
-        </ul>
-
-        <div class="separator"></div>
-
-        <ul class="social-list">
-
-          <li class="social-item">
-            <a href="https://www.facebook.com/profile.php?id=100008154316936" class="social-link" target="blank">
-              <ion-icon name="logo-facebook"></ion-icon>
-            </a>
-          </li>
-
-          <li class="social-item">
-            <a href="https://twitter.com/Sarthak_C97" class="social-link" target="blank">
-              <ion-icon name="logo-twitter"></ion-icon>
-            </a>
-          </li>
-
-          <li class="social-item">
-            <a href="https://www.instagram.com/sarthakchawathe/" class="social-link" target="blank">
-              <ion-icon name="logo-instagram"></ion-icon>
-            </a>
-          </li>
-
-          <li class="social-item">
-            <a href="https://www.linkedin.com/in/sarthak-chawathe-458251256/" class="social-link" target="blank">
-              <ion-icon name="logo-linkedin"></ion-icon>
-            </a>
-          </li>
-
-          <li class="social-item">
-            <a href="https://github.com/SarthakChawathe" class="social-link" target="blank">
-              <ion-icon name="logo-github"></ion-icon>
-            </a>
-          </li>
-          
-
-        </ul>
-
-      </div>
-
-    </aside>
-
-
-
-
-
-    <!--
-      - #main-content
-    -->
-
-    <div class="main-content">
-
-      <!--
-        - #NAVBAR
-      -->
-
-      <nav class="navbar">
-
-        <ul class="navbar-list">
-
-          <li class="navbar-item">
-            <button class="navbar-link  active" data-nav-link>About</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Resume</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Projects</button>
-          </li>
-
-          <!-- <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Blog</button>
-          </li> -->
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Contact</button>
-          </li>
-
-        </ul>
-
-      </nav>
-
-
-
-
-
-      <!--
-        - #ABOUT
-      -->
-
-      <article class="about  active" data-page="about">
-
-        <header>
-          <h2 class="h2 article-title">About me</h2>
+    <!--==================== HEAD ====================-->
+    <head>  
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--==================== UNICONS ====================-->
+        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.6/css/line.css">
+
+        <!--==================== SWIPER CSS ====================-->
+        <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+
+        <!--==================== CSS ====================-->
+        <link rel="stylesheet" href="assets/css/styles.css">
+
+        <title>Sarthak Chawathe</title>
+    </head>
+
+
+    <body>
+        <!--==================== HEADER ====================-->
+        <header class="header" id="header">
+            <nav class="nav container">
+                <a href="#" class="nav__logo">Sarthak Chawathe</a>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list grid">
+                        <li class="nav__item">
+                            <a href="#home" class="nav__link active-link">
+                                <i class="uil uil-estate nav__icon"></i> Home
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#about" class="nav__link">
+                                <i class="uil nav__icon uil-user"></i> About
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#skills" class="nav__link">
+                                <i class="uil nav__icon uil-file-alt"></i> Skills
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#qualification" class="nav__link">
+                                <i class="uil nav__icon uil-file-alt"></i> Qualification
+                            </a>
+                        </li>
+                        <!-- <li class="nav__item">
+                            <a href="#services" class="nav__link">
+                                <i class="uil nav__icon uil-briefcase-alt"></i> Services
+                            </a>
+                        </li> -->
+                        <li class="nav__item">
+                            <a href="#portfolio" class="nav__link">
+                                <i class="uil nav__icon uil-scenery"></i> Projects
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#certifications" class="nav__link">
+                                <i class="uil nav__icon uil-user"></i> Certifications
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#testimonials" class="nav__link">
+                                <i class="uil nav__icon uil-message"></i> Testimonials
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#contact" class="nav__link">
+                                <i class="uil nav__icon uil-message"></i> Contact
+                            </a>
+                        </li>
+                    </ul>
+                    <i class="uil uil-times nav__close" id="nav-close"></i>
+                </div>
+
+                <div class="nav__btns">
+                    <!-- Theme change button -->
+                    <i class="uil uil-moon change-theme" id="theme-button"></i>
+
+                    <div class="nav__toggle" id="nav-toggle">
+                        <i class="uil uil-apps"></i>
+                    </div>
+                </div>
+            </nav>
         </header>
 
-        <section class="about-text">
-          <p>
-            Problem solver with analytical and great communication skills. Desirous of a Data
-            Scientist/Analyst position, to leverage on solid Computer Science and Artificial Intelligence
-            background. Coming with solid mathematics background, programming skills, ability
-            to clearly communicate complex and technical information.
-          </p>
+        <!--==================== MAIN ====================-->
+        <main class="main">
+            <!--==================== HOME ====================-->
+            <section class="home section" id="home">
+                <div class="home__container container grid">
+                    <div class="home__content grid">
+                        <div class="home__social">
+                            <a href="https://www.linkedin.com/in/sarthak-chawathe-458251256/" target="_blank" class="home__social-icon">
+                                <i class="uil uil-linkedin-alt"></i>
+                            </a>
+                            <a href="https://github.com/SarthakChawathe" target="_blank" class="home__social-icon">
+                                <i class="uil uil-github-alt"></i>
+                            </a>
+                            <a href="https://www.instagram.com/sarthakchawathe/" target="_blank" class="home__social-icon">
+                                <i class="uil uil-instagram"></i>
+                            </a>
+                            <a href="https://www.facebook.com/profile.php?id=100008154316936" target="_blank" class="home__social-icon">
+                                <i class="uil uil-facebook-f"></i>
+                            </a>
+                            <a href="https://twitter.com/Sarthak_C97" target="_blank" class="home__social-icon">
+                                <i class="uil uil-twitter-alt"></i>
+                            </a>
+                        </div>
 
-          <!-- <p>
-            My job is to build your website so that it is functional and user-friendly but at the same time attractive.
-            Moreover, I
-            add Personall touch to your product and make sure that is eye-catching and easy to use. My aim is to bring
-            across your
-            message and identity in the most creative way. I created Personal for many famous brand companies.
-          </p> -->
-        </section>
+                        <div class="home__img">
+                            <svg class="home__blob" viewBox="0 0 200 187" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <mask id="mask0" mask-type="alpha">
+                                    <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 
+                                    130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775 
+                                    97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666 
+                                    0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"/>
+                                </mask>
+                                <g mask="url(#mask0)">
+                                    <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 
+                                    165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 
+                                    129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
+                                    -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"/>
 
+                                    <!-- <image class="home__blob-img" x=12" y="18" xlink:href="assets/img/IMG_8538.jpg"/> -->
+                                    <image class="home__blob-img" x="0" y="-25" xlink:href="assets/img/Personal/IMG_8538.jpg" style="transform: scale(1.2);"/>
 
-        <!--
-          - service
-        -->
+                                </g>
+                            </svg>
+                        </div>
+                        
+                        <div class="home__data">
+                            <h1 class="home__title">Hey there!!!</h1>
+                            <h3 class="home__subtitle">I am Sarthak Chawathe</h3>
+                            <p class="home__description">
+                                Passionate data enthusiast with a knack for uncovering actionable insights from intricate datasets to empower <br>data-driven decision-making.
+                            </p>
+                            <a href="#contact" class="button button--flex">
+                                Contact Me <i class="uil uil-message button__icon"></i>
+                            </a>
+                        </div>
+                    </div>
 
-        <!-- <section class="service">
-
-          <h3 class="h3 service-title">What i'm doing</h3>
-
-          <ul class="service-list">
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-design.svg
-                " alt="design icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Personal</h4>
-
-                <p class="service-item-text">
-                  The most modern and high-quality design made at a professional level.
-                </p>
-              </div>
-
-            </li>
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-dev.svg" alt="Industry icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Industry</h4>
-
-                <p class="service-item-text">
-                  High-quality development of sites at the professional level.
-                </p>
-              </div>
-
-            </li>
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-app.svg" alt="mobile app icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Mobile apps</h4>
-
-                <p class="service-item-text">
-                  Professional development of University for iOS and Android.
-                </p>
-              </div>
-
-            </li>
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-photo.svg" alt="camera icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Photography</h4>
-
-                <p class="service-item-text">
-                  I make high-quality photos of any category at a professional level.
-                </p>
-              </div>
-
-            </li>
-
-          </ul>
-
-        </section> -->
-
-
-        <section class="service">
-
-          <h3 class="h3 service-title">What I Do</h3>
-        
-          <ul class="service-list">
-
-            <li class="service-item">
-        
-              <div class="service-icon-box">
-                <img src="https://media.thoughtspot.com/35707/1669949290-data-cleaning-social.png?auto=format,compress&w=1534&fit=max" alt="data cleaning icon" width="100">
-              </div>
-        
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Data Cleaning</h4>
-        
-                <p class="service-item-text">
-                  Clean and preprocess raw data to ensure accuracy and reliability in analysis and modeling.
-                </p>
-              </div>
-        
-            </li>
-        
-            <li class="service-item">
-        
-              <div class="service-icon-box">
-                <img src="https://learn.g2.com/hubfs/Imported%20sitepage%20images/1ZB5giUShe0gw9a6L69qAgsd7wKTQ60ZRoJC5Xq3BIXS517sL6i6mnkAN9khqnaIGzE6FASAusRr7w=w1439-h786.png" alt="analytics icon" width="100">
-              </div>
-        
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Data Analysis</h4>
-        
-                <p class="service-item-text">
-                  Perform thorough data analysis to derive insights and make data-driven decisions.
-                </p>
-              </div>
-        
-            </li>
-        
-            <li class="service-item">
-        
-              <div class="service-icon-box">
-                <img src="https://builtin.com/cdn-cgi/image/f=auto,quality=80,width=752,height=435/https://builtin.com/sites/www.builtin.com/files/styles/byline_image/public/2021-12/machine-learning-examples-applications.png" alt="machine learning icon" width="100">
-              </div>
-        
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Machine Learning</h4>
-        
-                <p class="service-item-text">
-                  Apply machine learning algorithms and techniques to solve complex problems and build predictive models.
-                </p>
-              </div>
-        
-            </li>
-        
-            <li class="service-item">
-        
-              <div class="service-icon-box">
-                <img src="https://www.opendatasoft.com/wp-content/uploads/2022/08/Blog-thumbnail.png.webp" alt="data visualization icon" width="100">
-              </div>
-        
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Data Visualization</h4>
-        
-                <p class="service-item-text">
-                  Create visually appealing and informative data visualizations using various tools and libraries.
-                </p>
-              </div>
-        
-            </li>
-        
-        
-          </ul>
-        
-        </section>
-        
-
-        <!--
-          - testimonials
-        -->
-
-        <section class="testimonials">
-
-          <h3 class="h3 testimonials-title">Testimonials</h3>
-
-          <ul class="testimonials-list has-scrollbar">
-
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="assets/images/1663471240127.jpeg" alt="Shabhada Labde" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Shabhada Labde</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    We extend our heartfelt appreciation to Mr. Sarthak Chawathe, former TCS employee and Data Analyst, 
-                    and an esteemed alumnus of KJ Somaiya Institute of Technology, Mumbai.
-                    We are proud to acknowledge his exceptional contributions as a speaker in our 
-                    "Machine Learning & Big Data Analytics" winter internship program from 6th Dec to 5th Jan 2022. 
-                    Additionally, we commend his dedication as a mentor to the final year students during their project journey.
-                    Mr. Chawathe's expertise, both as a speaker and a mentor, greatly enriched the program, leaving a 
-                    lasting impact on all participants.
-                  </p>
+                    <div class="home__scroll">
+                        <a href="#about" class="home__scroll-button button--flex">
+                            <i class="uil uil-mouse-alt home__scroll-mouse"></i>
+                            <span class="home__scroll-name">Scroll down</span>
+                            <i class="uil uil-arrow-down home__scroll-arrow"></i>
+                        </a>
+                    </div>
                 </div>
+            </section>
 
-              </div>
-            </li>
+            <!--==================== ABOUT ====================-->
+            <section class="about section" id="about">
+                <h2 class="section__title">About Me</h2>
+                <span class="section__subtitle">My introduction</span>
 
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
+                <div class="about__container container grid">
+                    <img src="assets/img/Personal/code.gif" alt="" class="about__img">
 
-                <figure class="testimonials-avatar-box">
-                  <img src="assets/images/1663888764416.jpeg" alt="Aditi Sonawane" width="60" data-testimonials-avatar>
-                </figure>
+                    <div class="about__data">
+                        <p class="about__description">
+                            Problem solver with analytical and great communication skills. Desirous of a Data
+                            Scientist/Analyst position, to leverage on solid Computer Science and Artificial Intelligence
+                            background. Coming with solid mathematics foundation, programming skills, ability
+                            to clearly communicate complex and technical information.
+                        </p>
+                        <div class="about__info">
+                            <div>
+                                <span class="about__info-title">2</span>
+                                <span class="about__info-name">Years <br> Experience</span>
+                            </div>
+                            <div>
+                                <span class="about__info-title">5+</span>
+                                <span class="about__info-name">Completed <br> Projects</span>
+                            </div>
+                            <!-- <div>
+                                <span class="about__info-title">1</span>
+                                <span class="about__info-name">Companies <br> Worked</span>
+                            </div> -->
+                            <div>
+                                <span class="about__info-title">5+</span>
+                                <span class="about__info-name">Certifications</span>
+                            </div>
+                        </div>
 
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Aditi Sonawane</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    I highly recommend Sarthak Chawathe for any data-related opportunities. 
-                    He possess exceptional skills, strong work ethic, and a collaborative mindset. 
-                    Sarthak exhibits exceptional problem-solving abilities, attention to detail, 
-                    and a positive attitude. His effective communication, adaptability, and growth mindset 
-                    contribute to a harmonious and productive work environment. Sarthak is poised for success 
-                    in Data Science and will make significant contributions.
-                  </p>
+                        <div class="about__buttons">
+                            <a href="https://drive.google.com/file/d/1lAH6N8yRFfmm1yNjEzuj2yRWhVdah_-K/view?usp=drive_link" target="_blank" class="button button--flex">
+                                Resume<i class="uil uil-download-alt button__icon"></i>
+                            </a>
+                        </div>
+                    </div>
                 </div>
+            </section>
 
-              </div>
-            </li>
+            <!--==================== SKILLS ====================-->
+            <section class="skills section" id="skills">
+                <h2 class="section__title">Skills</h2>
+                <span class="section__subtitle">My Technical Level</span>
 
-            <!-- <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
+                <!--==================== SKILLS Container 1 ====================-->
+                <div class="skills__container container grid">
+                    <div>
+                        <!--==================== SKILLS 1 ====================-->
+                        <div class="skills__content skills__close">
+                            <div class="skills__header">
+                                <i class="uil uil-brackets-curly skills__icon"></i>
 
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-3.png" alt="Emily evans" width="60" data-testimonials-avatar>
-                </figure>
+                                <div>
+                                    <h1 class="skills__title">Programming Languages</h1>
+                                    <span class="skills__subtitle">Click here to expand</span>
+                                </div>
 
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Emily evans</h4>
+                                <i class="uil uil-angle-down skills__arrow"></i>
+                            </div>
 
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
-                    lot of experience
-                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                    consectetur adipiscing
-                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                  </p>
+                            <div class="skills__list grid">
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills_name">Python</h3>
+                                        <span class="skills__number">90%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__python"></span>
+                                    </div>
+                                </div>
+
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills_name">R</h3>
+                                        <span class="skills__number">70%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__r"></span>
+                                    </div>
+                                </div>
+
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills_name">SQL</h3>
+                                        <span class="skills__number">85%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__sql"></span>
+                                    </div>
+                                </div>
+
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills_name">Java</h3>
+                                        <span class="skills__number">75%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__java"></span>
+                                    </div>
+                                </div>
+
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills_name">C</h3>
+                                        <span class="skills__number">70%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__c"></span>
+                                    </div>
+                                </div>
+
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills_name">HTML</h3>
+                                        <span class="skills__number">80%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__html"></span>
+                                    </div>
+                                </div>
+
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills_name">CSS</h3>
+                                        <span class="skills__number">80%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__css"></span>
+                                    </div>
+                                </div>
+
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills_name">JavaScript</h3>
+                                        <span class="skills__number">80%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__js"></span>
+                                    </div>
+                                </div>
+
+                                <!-- <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills_name">React</h3>
+                                        <span class="skills__number">85%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__react"></span>
+                                    </div>
+                                </div> -->
+                            </div>
+                        </div>
+
+                        <!--==================== SKILLS 2 ====================-->
+                        <div class="skills__content skills__close">
+                            <div class="skills__header">
+                                <i class="uil uil-cog skills__icon"></i>
+
+                                <div>
+                                    <h1 class="skills__title">Data Manipulation and Analysis:</h1>
+                                    <span class="skills__subtitle">Click here to expand</span>
+                                </div>
+
+                                <i class="uil uil-angle-down skills__arrow"></i>
+                            </div>
+
+                            <div class="skills__list grid">
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills_name">Pandas</h3>
+                                        <span class="skills__number">90%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__pandas"></span>
+                                    </div>
+                                </div>
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills_name">Numpy</h3>
+                                        <span class="skills__number">90%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__np"></span>
+                                    </div>
+                                </div>
+                                <!-- <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills_name">Matplotlib</h3>
+                                        <span class="skills__number">80%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__php"></span>
+                                    </div>
+                                </div> -->
+                                <!-- <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills_name">Seaborn</h3>
+                                        <span class="skills__number">80%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__php"></span>
+                                    </div>
+                                </div> -->
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills_name">Scikit-learn</h3>
+                                        <span class="skills__number">80%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__sklearn"></span>
+                                    </div>
+                                </div>
+                                
+
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills_name">SciPy</h3>
+                                        <span class="skills__number">80%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__scipy"></span>
+                                    </div>
+                                </div>
+
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills_name">Exploratory Data Analysis</h3>
+                                        <span class="skills__number">90%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__eda"></span>
+                                    </div>
+                                </div>
+
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills_name">Matplotlib</h3>
+                                        <span class="skills__number">90%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__plt"></span>
+                                    </div>
+                                </div>
+
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills_name">Seaborn</h3>
+                                        <span class="skills__number">90%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__sns"></span>
+                                    </div>
+                                </div>
+
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills_name">ggplot</h3>
+                                        <span class="skills__number">75%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__ggplot"></span>
+                                    </div>
+                                </div>
+
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills_name">Tableau</h3>
+                                        <span class="skills__number">80%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__tableau"></span>
+                                    </div>
+                                </div>
+
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills_name">Power BI</h3>
+                                        <span class="skills__number">80%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__bi"></span>
+                                    </div>
+                                </div>
+
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills_name">Google Looker Studio</h3>
+                                        <span class="skills__number">75%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__looker"></span>
+                                    </div>
+                                </div>
+
+                                <!-- <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills_name">Python</h3>
+                                        <span class="skills__number">55%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__python"></span>
+                                    </div>
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <!--==================== SKILLS 3 ====================-->
+                        <div class="skills__content skills__close">
+                            <div class="skills__header">
+                                <i class="uil uil-cloud-database-tree skills__icon"></i>
+
+                                <div>
+                                    <h1 class="skills__title">Big Data Technologies</h1>
+                                    <span class="skills__subtitle">Click here to expand</span>
+                                </div>
+
+                                <i class="uil uil-angle-down skills__arrow"></i>
+                            </div>
+
+                            <div class="skills__list grid">
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills_name">Apache Hadoop</h3>
+                                        <span class="skills__number">75%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__hadoop"></span>
+                                    </div>
+                                </div>
+
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills_name">Apache Spark</h3>
+                                        <span class="skills__number">75%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__spark"></span>
+                                    </div>
+                                </div>
+
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills_name">Google Cloud Platform</h3>
+                                        <span class="skills__number">80%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__gcp"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--==================== SKILLS 4 ====================-->
+
+                        <div class="skills__content skills__close">
+                            <div class="skills__header">
+                                <i class="uil uil-database skills__icon"></i>
+
+                                <div>
+                                    <h1 class="skills__title">Database Management</h1>
+                                    <span class="skills__subtitle">Click here to expand</span>
+                                </div>
+
+                                <i class="uil uil-angle-down skills__arrow"></i>
+                            </div>
+
+                            <div class="skills__list grid">
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills_name">MySQL</h3>
+                                        <span class="skills__number">85%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__mysql"></span>
+                                    </div>
+                                </div>
+
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills_name">IBM DB2</h3>
+                                        <span class="skills__number">75%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__db2"></span>
+                                    </div>
+                                </div>
+
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills_name">Google BigQuery</h3>
+                                        <span class="skills__number">80%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__bigquery"></span>
+                                    </div>
+                                </div>
+
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills_name">PostgreSQL</h3>
+                                        <span class="skills__number">85%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__pgsql"></span>
+                                    </div>
+                                </div>
+
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills_name">Microsoft SQL Server</h3>
+                                        <span class="skills__number">80%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__sqlserver"></span>
+                                    </div>
+                                </div>
+
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills_name">MongoDb</h3>
+                                        <span class="skills__number">75%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__mongodb"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        
+                    </div>
+
                 </div>
-
-              </div>
-            </li>
-
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-4.png" alt="Henry william" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Henry william</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
-                    lot of experience
-                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                    consectetur adipiscing
-                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                  </p>
-                </div>
-
-              </div>
-            </li> -->
-
-          </ul>
-
-        </section>
-
-
-        <!--
-          - testimonials modal
-        -->
-
-        <div class="modal-container" data-modal-container>
-
-          <div class="overlay" data-overlay></div>
-
-          <section class="testimonials-modal">
-
-            <button class="modal-close-btn" data-modal-close-btn>
-              <ion-icon name="close-outline"></ion-icon>
-            </button>
-
-            <div class="modal-img-wrapper">
-              <figure class="modal-avatar-box">
-                <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
-              </figure>
-
-              <img src="./assets/images/icon-quote.svg" alt="quote icon">
-            </div>
-
-            <div class="modal-content">
-
-              <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
-
-              <!-- <time datetime="2021-06-14">14 June, 2021</time> -->
-
-              <div data-modal-text>
-                <p>
-                  Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
-                  lot of experience
-                  and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                  consectetur adipiscing
-                  elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                </p>
-              </div>
-
-            </div>
-
-          </section>
-
-        </div>
-
-
-
-
-        
-
-
-
-
-        <!--
-          - clients
-        -->
-
-        <section class="clients">
-
-          <h3 class="h3 clients-title">Certifications</h3>
-
-          <ul class="clients-list has-scrollbar">
-
-            <!-- <li class="clients-item">
-              <a href="https://drive.google.com/file/d/1tXSY1OeE0G3ID2JLbKZ54Zb-4B_xV4rp/view?usp=sharing">
-                <img src="https://storage.googleapis.com/grow-with-goog-publish-prod-media/images/Data_Analytics_social.max-800x600.scale-100.png" alt="client logo">
-                <h4 class="certification-title">Google Data Analytics</h4>
-              </a>
-            </li> -->
-
-            <!-- <li class="clients-item">
-              <a href="https://drive.google.com/file/d/1tXSY1OeE0G3ID2JLbKZ54Zb-4B_xV4rp/view?usp=sharing">
-                <div class="certification-img-wrapper">
-                  <img src="https://storage.googleapis.com/grow-with-goog-publish-prod-media/images/Data_Analytics_social.max-800x600.scale-100.png" alt="client logo">
-                  <div class="certification-hover">
-                    <h4 class="certification-title">Google Data Analytics</h4>
-                  </div>
-                </div>
-              </a>
-            </li> -->
-
-            <!-- <li class="clients-item">
-              <a href="https://drive.google.com/file/d/1tXSY1OeE0G3ID2JLbKZ54Zb-4B_xV4rp/view?usp=sharing" target="_blank">
-                <div class="certification-img-wrapper">
-                  <img src="https://images.credly.com/images/d41de2b7-cbc2-47ec-bcf1-ebecbe83872f/GCC_badge_DA_1000x1000.png" alt="client logo">
-                  <div class="certification-hover">
-                    <h4 class="certification-title">Google Data Analytics</h4>
-                  </div>
-                </div>
-              </a>
-            </li> -->
-            
-            
-            <li class="clients-item">
-              <a href="https://drive.google.com/file/d/1tXSY1OeE0G3ID2JLbKZ54Zb-4B_xV4rp/view?usp=sharing" target="_blank">
-                <img src="https://images.credly.com/images/d41de2b7-cbc2-47ec-bcf1-ebecbe83872f/GCC_badge_DA_1000x1000.png" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="https://drive.google.com/file/d/1nSImEWf8oUjTUZtmi4RktJOtSVcjuG90/view?usp=sharing" target="_blank">
-                <img src="https://images.credly.com/size/680x680/images/b47e9b58-7f54-4981-b156-5e7d354c8215/Professional_Certificate_-_Data_Science.png" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="https://drive.google.com/file/d/1FTuVhSD7P7H5n3g7lcVr2XG34TJEpRRF/view?usp=sharing" target="_blank">
-                <img src="https://images.credly.com/size/680x680/images/85652c38-3bda-4c60-8f5f-b986904aea1d/MTA-HTML5-Application-Development-Fundamentals-2019.png" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="https://drive.google.com/file/d/1aOC6Zn3AR-JacNDKA7A5JQvuT1ztZwM5/view?usp=sharing" target="_blank">
-                <img src="https://www.passionateinmarketing.com/wp-content/uploads/2023/03/1656938000.jpeg" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="https://drive.google.com/file/d/1wyIwsAKfquHeGunkKTD5Lo6b3e7qSGM_/view?usp=sharing" target="_blank">
-                <img src="https://lbrce.ac.in/images/nptel/banner3.png" alt="client logo">
-              </a>
-            </li>
-
-            <!-- <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-6-color.png" alt="client logo">
-              </a>
-            </li> -->
-
-          </ul>
-
-        </section>
-
-      </article>
-
-
-      
-      <!--
-          - certifications
-        -->
-
-        <!-- <section class="certifications">
-
-          <h3 class="h3 certifications-title">Certifications</h3>
-
-          <ul class="certifications-list has-scrollbar">
-
-            <li class="certifications-item">
-              <a href="#">
-                <img src="./assets/images/logo-1-color.png" alt="client logo">
-              </a>
-            </li>
-
-            <li class="certifications-item">
-              <a href="#">
-                <img src="./assets/images/logo-2-color.png" alt="client logo">
-              </a>
-            </li>
-
-            <li class="certifications-item">
-              <a href="#">
-                <img src="./assets/images/logo-3-color.png" alt="client logo">
-              </a>
-            </li>
-
-            <li class="certifications-item">
-              <a href="#">
-                <img src="./assets/images/logo-4-color.png" alt="client logo">
-              </a>
-            </li>
-
-            <li class="certifications-item">
-              <a href="#">
-                <img src="./assets/images/logo-5-color.png" alt="client logo">
-              </a>
-            </li>
-
-            <li class="certifications-item">
-              <a href="#">
-                <img src="./assets/images/logo-6-color.png" alt="client logo">
-              </a>
-            </li>
-
-          </ul>
-
-        </section>
-
-      </article> -->
-
-
-
-
-      <!--
-        - #RESUME
-      -->
-
-      <article class="resume" data-page="resume">
-
-        <header>
-          <h2 class="h2 article-title">Resume</h2>
-        </header>
-
-        <section class="timeline">
-
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
-            </div>
-
-            <h3 class="h3">Education</h3>
-          </div>
-
-          <ol class="timeline-list">
-
-            <!-- <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Indiana Personal Bloomigton</h4>
-
-              <span>2022 — 2024</span>
-
-              <p class="timeline-text">
-                <b>CGPA:</b> 3.8
-                <b>Coursework:</b> Applied Algorithms, Advance Database Concepts, Introduction to Statistics, Data Mining, Applied Machine Learning, Management And Access of Big Data Systems
-              </p>
-
-            </li> -->
-
-
-            <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">Indiana University Bloomington</h4>
-              <span>2022 — 2024</span>
-              <b><span class="cgpa">CGPA: 3.52/4.00 </span></b>
-              <p class="timeline-text">
-                <b>Coursework:</b> Applied Algorithms, Advance Database Concepts, Introduction to Statistics, Data Mining, Applied Machine Learning, Management And Access of Big Data Systems<br>
                 
-              </p>
-            </li>
+                <!--==================== SKILLS Container 2 ====================-->
+                <div class="skills__container container grid">
+                    <div>
+                        <!--==================== SKILLS 1 ====================-->
+                        <div class="skills__content skills__close">
+                            <div class="skills__header">
+                                <i class="uil uil-robot skills__icon"></i>
 
-            <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">University of Mumbai</h4>
-              <span>2015 — 2019</span>
-              <b><span class="cgpa">CGPA: 7.95/10.00 </span></b>
-              <p class="timeline-text">
-                <b>Coursework:</b> Object Oriented Programming Methodology, Structured Programming Approach Data Structures, Analysis of Algorithms, Database Management System, Distributed databases, Cryptography and System Security, Artificial Intelligence, Data Warehouse and Mining, Human Machine Interaction
-              </p>
+                                <div>
+                                    <h1 class="skills__title">Machine Learning</h1>
+                                    <span class="skills__subtitle">Click here to expand</span>
+                                </div>
 
-            </li>
+                                <i class="uil uil-angle-down skills__arrow"></i>
+                            </div>
 
-            <!-- <li class="timeline-item">
+                            <div class="skills__list grid">
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills_name">Supervised Learning</h3>
+                                        <span class="skills__number">80%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__supervised"></span>
+                                    </div>
+                                </div>
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills_name">Unsupervised Learning</h3>
+                                        <span class="skills__number">85%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__unsupervised"></span>
+                                    </div>
+                                </div>
 
-              <h4 class="h4 timeline-item-title">High school of art and design</h4>
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills_name">Model Evaluation</h3>
+                                        <span class="skills__number">85%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__modeleval"></span>
+                                    </div>
+                                </div>
 
-              <span>2002 — 2004</span>
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills_name">Cross-Validation</h3>
+                                        <span class="skills__number">80%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__cv"></span>
+                                    </div>
+                                </div>
 
-              <p class="timeline-text">
-                Duis aute irure dolor in reprehenderit in voluptate, quila voluptas mag odit aut fugit, sed consequuntur
-                magni dolores
-                eos.
-              </p>
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills_name">Feature Engineering</h3>
+                                        <span class="skills__number">80%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__featureeng"></span>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
 
-            </li> -->
+                        <!--==================== SKILLS 2 ====================-->
+                        <div class="skills__content skills__close">
+                            <div class="skills__header">
+                                <i class="uil uil-sigma skills__icon"></i>
 
-          </ol>
+                                <div>
+                                    <h1 class="skills__title">Statistics</h1>
+                                    <span class="skills__subtitle">Click here to expand</span>
+                                </div>
 
-        </section>
+                                <i class="uil uil-angle-down skills__arrow"></i>
+                            </div>
 
-        <section class="timeline">
+                            <div class="skills__list grid">
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills_name">Statistical Analysis</h3>
+                                        <span class="skills__number">85%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__stat"></span>
+                                    </div>
+                                </div>
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills_name">Hypothesis Testing</h3>
+                                        <span class="skills__number">80%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__hypo"></span>
+                                    </div>
+                                </div>
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills_name">A/B Testing</h3>
+                                        <span class="skills__number">75%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__ab"></span>
+                                    </div>
+                                </div>
+                                <!-- <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills_name">Seaborn</h3>
+                                        <span class="skills__number">80%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__php"></span>
+                                    </div>
+                                </div>
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills_name">Scikit-learn</h3>
+                                        <span class="skills__number">80%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__php"></span>
+                                    </div>
+                                </div>
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills_name">TensorFlow</h3>
+                                        <span class="skills__number">80%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__php"></span>
+                                    </div>
+                                </div>
 
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills_name">Keras</h3>
+                                        <span class="skills__number">80%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__php"></span>
+                                    </div>
+                                </div>
+
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills_name">PyTorch</h3>
+                                        <span class="skills__number">70%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__node"></span>
+                                    </div>
+                                </div>
+
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills_name">SciPy</h3>
+                                        <span class="skills__number">90%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__firebase"></span>
+                                    </div>
+                                </div> -->
+
+                                <!-- <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills_name">Python</h3>
+                                        <span class="skills__number">55%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__python"></span>
+                                    </div>
+                                </div> -->
+                            </div>
+                        </div>
+                    </div> 
+                    
+                    
+                    <div>
+                        <!--==================== SKILLS 3 ====================-->
+                        
+                        
+
+                        <div class="skills__content skills__close">
+                            <div class="skills__header">
+                                <i class="uil uil-share-alt skills__icon"></i>
+
+                                <div>
+                                    <h1 class="skills__title">Deep Learning</h1>
+                                    <span class="skills__subtitle">Click here to expand</span>
+                                </div>
+
+                                <i class="uil uil-angle-down skills__arrow"></i>
+                            </div>
+
+                            <div class="skills__list grid">
+
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills_name">Neural Networks</h3>
+                                        <span class="skills__number">80%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__nn"></span>
+                                    </div>
+                                </div>
+                                <!-- <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills_name">Convolutional Neural Networks (CNN)</h3>
+                                        <span class="skills__number">90%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__html"></span>
+                                    </div>
+                                </div>
+
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills_name">Recurrent Neural Networks (RNN)</h3>
+                                        <span class="skills__number">90%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__html"></span>
+                                    </div>
+                                </div> -->
+
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills_name">TensorFlow</h3>
+                                        <span class="skills__number">80%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__tf"></span>
+                                    </div>
+                                </div>
+
+                                <!-- <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills_name">Keras</h3>
+                                        <span class="skills__number">80%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__php"></span>
+                                    </div>
+                                </div> -->
+
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills_name">PyTorch</h3>
+                                        <span class="skills__number">70%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__pytorch"></span>
+                                    </div>
+                                </div>
+
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills_name">Natural Language Processing</h3>
+                                        <span class="skills__number">75%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__nlp"></span>
+                                    </div>
+                                </div>
+
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills_name">Time Series Analysis</h3>
+                                        <span class="skills__number">70%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__timeseries"></span>
+                                    </div>
+                                </div>
+
+                                <!-- <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills_name">Generative Adversarial Networks (GAN)</h3>
+                                        <span class="skills__number">90%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__html"></span>
+                                    </div>
+                                </div>
+
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills_name">Transformers</h3>
+                                        <span class="skills__number">90%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__html"></span>
+                                    </div>
+                                </div>
+
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills_name">Transfer Learning</h3>
+                                        <span class="skills__number">90%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__html"></span>
+                                    </div>
+                                </div> -->
+
+                                <!-- <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills_name">HTML</h3>
+                                        <span class="skills__number">90%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__html"></span>
+                                    </div>
+                                </div>
+
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills_name">CSS</h3>
+                                        <span class="skills__number">80%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__css"></span>
+                                    </div>
+                                </div>
+
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills_name">JavaScript</h3>
+                                        <span class="skills__number">60%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__js"></span>
+                                    </div>
+                                </div> -->
+
+                                <!-- <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills_name">React</h3>
+                                        <span class="skills__number">85%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__react"></span>
+                                    </div>
+                                </div> -->
+                            </div>
+                        </div>
+
+
+                        <div class="skills__content skills__close">
+                            <div class="skills__header">
+                                <i class="uil uil-code-branch skills__icon"></i>
+
+                                <div>
+                                    <h1 class="skills__title">Version Control</h1>
+                                    <span class="skills__subtitle">Click here to expand</span>
+                                </div>
+
+                                <i class="uil uil-angle-down skills__arrow"></i>
+                            </div>
+
+                            <div class="skills__list grid">
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills_name">GitHub</h3>
+                                        <span class="skills__number">85%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__github"></span>
+                                    </div>
+                                </div>
+
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills_name">Git</h3>
+                                        <span class="skills__number">70%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__git"></span>
+                                    </div>
+                                </div>
+
+                                <!-- <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills_name">Firebase</h3>
+                                        <span class="skills__number">90%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__firebase"></span>
+                                    </div>
+                                </div>
+
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills_name">Python</h3>
+                                        <span class="skills__number">55%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__python"></span>
+                                    </div>
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <!--==================== QUALIFICATION ====================-->
+            <section class="qualification section" id="qualification">
+                <h2 class="section__title">Qualification</h2>
+                <span class="section__subtitle">My Personal Journey</span>
+
+                <div class="qualification__container container">
+                    <div class="qualification__tabs">
+                        <div class="qualification__button button--flex qualification__active" data-target="#education">
+                            <i class="uil uil-graduation-cap qualification__icon"></i>
+                            Education
+                        </div>
+                        <div class="qualification__button button--flex" data-target="#work">
+                            <i class="uil uil-briefcase-alt qualification__icon"></i>
+                            Work
+                        </div>
+                        <div class="qualification__button button--flex" data-target="#other">
+                            <i class="uil uil-balance-scale qualification__icon"></i>
+                            Volunteer/Other
+                        </div>
+                    </div>
+                    <div class="qualification__sections">
+                        <!-- 1 -->
+                        <div class="qualification__content qualification__active" data-content id="education">
+                            <!-- 1 -->
+                            <div class="qualification__data">
+                                <div>
+                                    <h3 class="qualification__title">MS Data Science</h3>
+                                    <span class="qualification__subtitle">Indiana University Bloomington - Bloomington, IN</span>
+                                    <div class="qualification__calendar">
+                                        <i class="uil uil-calendar-alt"></i>
+                                        Aug 2022 - May 2024
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <span class="qualification__rounder"></span>
+                                    <span class="qualification__line"></span>
+                                </div>
+                            </div>
+
+                            <!-- 2 -->
+                            <div class="qualification__data">
+                                <div></div>
+
+                                <div>
+                                    <span class="qualification__rounder"></span>
+                                    <span class="qualification__line"></span>
+                                </div>
+
+                                <div>
+                                    <h3 class="qualification__title">BE Computer Engineering</h3>
+                                    <span class="qualification__subtitle">KJ Somaiya Institute of Technology - Mumbai, India</span>
+                                    <div class="qualification__calendar">
+                                        <i class="uil uil-calendar-alt"></i>
+                                        Aug 2015 - May 2019
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- 3 -->
+                            <!-- <div class="qualification__data">
+                                <div>
+                                    <h3 class="qualification__title">Web Development</h3>
+                                    <span class="qualification__subtitle">Peru - Institute</span>
+                                    <div class="qualification__calendar">
+                                        <i class="uil uil-calendar-alt"></i>
+                                        2017 - 2019
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <span class="qualification__rounder"></span>
+                                    <span class="qualification__line"></span>
+                                </div>
+                            </div> -->
+
+                            <!-- 4 -->
+                            <!-- <div class="qualification__data">
+                                <div></div>
+
+                                <div>
+                                    <span class="qualification__rounder"></span>
+                                    <<span class="qualification__line"></span>
+                                <!-- </div>
+
+                                <div>
+                                    <h3 class="qualification__title">Master in Ui/Ux</h3>
+                                    <span class="qualification__subtitle">Peru - Institute</span>
+                                    <div class="qualification__calendar">
+                                        <i class="uil uil-calendar-alt"></i>
+                                        2019 - 2021
+                                    </div>
+                                </div>
+                            </div> --> 
+
+                        </div>
+                        <!-- 2 -->
+                        <div class="qualification__content" data-content id="work">
+                            <!-- 1 -->
+                            <div class="qualification__data">
+                                <div>
+                                    <h3 class="qualification__title">Graduate Teaching Assistant</h3>
+                                    <span class="qualification__subtitle">(Part-time)<br>Indiana University Bloomington - Bloomington, IN</span>
+                                    <div class="qualification__calendar">
+                                        <i class="uil uil-calendar-alt"></i>
+                                        Aug 2023 - Present
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <span class="qualification__rounder"></span>
+                                    <span class="qualification__line"></span>
+                                </div>
+                            </div>
+
+                            <!-- 2 -->
+                            <div class="qualification__data">
+                                <div></div>
+
+                                <div>
+                                    <span class="qualification__rounder"></span>
+                                    <span class="qualification__line"></span>
+                                </div>
+
+                                <div>
+                                    <h3 class="qualification__title">HiCounselor</h3>
+                                    <span class="qualification__subtitle">(Apprenticeship)<br>HiCounselor - Bloomington(Remote), IN</span>
+                                    <div class="qualification__calendar">
+                                        <i class="uil uil-calendar-alt"></i>
+                                        Jul 2023 - Aug 2023
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- 3 -->
+                            <div class="qualification__data">
+                                <div>
+                                    <h3 class="qualification__title">Assistant Systems Enginner</h3>
+                                    <span class="qualification__subtitle">(Full-time)<br>Tata Consultancy Services - Mumbai, India</span>
+                                    <div class="qualification__calendar">
+                                        <i class="uil uil-calendar-alt"></i>
+                                        Sep 2019 - Dec 2020
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <span class="qualification__rounder"></span>
+                                    <span class="qualification__line"></span>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!-- 3 -->
+                        <div class="qualification__content" data-content id="other">
+                            <!-- 1 -->
+                            <div class="qualification__data">
+                                <div>
+                                    <h3 class="qualification__title">IU Dining Student Worker</h3>
+                                    <span class="qualification__subtitle">Indiana University Bloomington - Bloomington, IN</span>
+                                    <div class="qualification__calendar">
+                                        <i class="uil uil-calendar-alt"></i>
+                                        Aug 2022 - Aug 2023
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <span class="qualification__rounder"></span>
+                                    <span class="qualification__line"></span>
+                                </div>
+                            </div>
+
+                            <!-- 2 -->
+                            <div class="qualification__data">
+                                <div></div>
+
+                                <div>
+                                    <span class="qualification__rounder"></span>
+                                    <span class="qualification__line"></span>
+                                </div>
+
+                                <div>
+                                    <h3 class="qualification__title">Mentor (Machine Learning & Big Data Analytics)</h3>
+                                    <span class="qualification__subtitle">KJ Somaiya Institute of Technology - Mumbai, India</span>
+                                    <div class="qualification__calendar">
+                                        <i class="uil uil-calendar-alt"></i>
+                                        Aug 2021 - May 2022
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- 3 -->
+                            <div class="qualification__data">
+                                <div>
+                                    <h3 class="qualification__title">Technical Team Member</h3>
+                                    <span class="qualification__subtitle">Computer Society of India - Mumbai, India</span>
+                                    <div class="qualification__calendar">
+                                        <i class="uil uil-calendar-alt"></i>
+                                        Aug 2015 - May 2019
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <span class="qualification__rounder"></span>
+                                    <span class="qualification__line"></span>
+                                </div>
+                            </div>
+                            
+                            <!-- 4 -->
+                            <div class="qualification__data">
+                                <div></div>
+
+                                <div>
+                                    <span class="qualification__rounder"></span>
+                                    <span class="qualification__line"></span>
+                                </div>
+
+                                <div>
+                                    <h3 class="qualification__title">Joint Sports Head</h3>
+                                    <span class="qualification__subtitle">KJ Somaiya Institute of Technology - Mumbai, India</span>
+                                    <div class="qualification__calendar">
+                                        <i class="uil uil-calendar-alt"></i>
+                                        Aug 2017 - May 2018
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== SERVICES ====================-->
+            <!-- <section class="services section" id="services">
+                <h2 class="section__title">Services</h2>
+                <span class="section__subtitle">What I can offer</span>
+                
+                <div class="services__container container grid"> -->
+                    <!--==================== SERVICES 1 ====================-->
+                    <!-- <div class="services__content">
+                        <div>
+                            <i class="uil uil-web-grid services__icon"></i>
+                            <h3 class="services__title">Understanding <br> Business Problem</h3>
+                        </div>
+                        <span class="button button--flex button--small button--link services__button">
+                            View More
+                            <i class="uil uil-arrow-right button__icon"></i>
+                        </span>
+                        
+                        <div class="services__modal">
+                            <div class="services__modal-content">
+                                <h4 class="services__modal-title">UI/UX <br> Designer</h4>
+                                <i class="uil uil-times services__modal-close"></i>
+                                
+                                <ul class="services__modal-services grid">
+                                    <li class="services__modal-service">
+                                        <i class="uil uil-check-circle services__modal-icon"></i>
+                                        <p>I develop the user interface.</p>
+                                    </li>
+                                    <li class="services__modal-service">
+                                        <i class="uil uil-check-circle services__modal-icon"></i>
+                                        <p>Web page development.</p>
+                                    </li>
+                                    <li class="services__modal-service">
+                                        <i class="uil uil-check-circle services__modal-icon"></i>
+                                        <p>I create ux element interactions.</p>
+                                    </li>
+                                    <li class="services__modal-service">
+                                        <i class="uil uil-check-circle services__modal-icon"></i>
+                                        <p>I position your company.</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div> -->
+                    <!--==================== SERVICES 2 ====================-->
+                    <!-- <div class="services__content">
+                        <div>
+                            <i class="uil uil-arrow services__icon"></i>
+                            <h3 class="services__title">Collecting & <br> Storing Data</h3>
+                        </div>
+                        <span class="button button--flex button--small button--link services__button">
+                            View More
+                            <i class="uil uil-arrow-right button__icon"></i>
+                        </span>
+                        
+                        <div class="services__modal">
+                            <div class="services__modal-content">
+                                <h4 class="services__modal-title">Frontend <br> Developer</h4>
+                                <i class="uil uil-times services__modal-close"></i>
+                                
+                                <ul class="services__modal-services grid">
+                                    <li class="services__modal-service">
+                                        <i class="uil uil-check-circle services__modal-icon"></i>
+                                        <p>I develop the user interface.</p>
+                                    </li>
+                                    <li class="services__modal-service">
+                                        <i class="uil uil-check-circle services__modal-icon"></i>
+                                        <p>Web page development.</p>
+                                    </li>
+                                    <li class="services__modal-service">
+                                        <i class="uil uil-check-circle services__modal-icon"></i>
+                                        <p>I create ux element interactions.</p>
+                                    </li>
+                                    <li class="services__modal-service">
+                                        <i class="uil uil-check-circle services__modal-icon"></i>
+                                        <p>I position your company.</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div> -->
+
+                    <!--==================== SERVICES 3 ====================-->
+                    <!-- <div class="services__content">
+                        <div>
+                            <i class="uil uil-arrow services__icon"></i>
+                            <h3 class="services__title">Processing <br> Data</h3>
+                        </div>
+                        <span class="button button--flex button--small button--link services__button">
+                            View More
+                            <i class="uil uil-arrow-right button__icon"></i>
+                        </span>
+                        
+                        <div class="services__modal">
+                            <div class="services__modal-content">
+                                <h4 class="services__modal-title">Frontend <br> Developer</h4>
+                                <i class="uil uil-times services__modal-close"></i>
+                                
+                                <ul class="services__modal-services grid">
+                                    <li class="services__modal-service">
+                                        <i class="uil uil-check-circle services__modal-icon"></i>
+                                        <p>I develop the user interface.</p>
+                                    </li>
+                                    <li class="services__modal-service">
+                                        <i class="uil uil-check-circle services__modal-icon"></i>
+                                        <p>Web page development.</p>
+                                    </li>
+                                    <li class="services__modal-service">
+                                        <i class="uil uil-check-circle services__modal-icon"></i>
+                                        <p>I create ux element interactions.</p>
+                                    </li>
+                                    <li class="services__modal-service">
+                                        <i class="uil uil-check-circle services__modal-icon"></i>
+                                        <p>I position your company.</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div> -->
+
+                    <!--==================== SERVICES 4 ====================-->
+                    <!-- <div class="services__content">
+                        <div>
+                            <i class="uil uil-arrow services__icon"></i>
+                            <h3 class="services__title">Deploying the <br> Right Algorithm</h3>
+                        </div>
+                        <span class="button button--flex button--small button--link services__button">
+                            View More
+                            <i class="uil uil-arrow-right button__icon"></i>
+                        </span>
+                        
+                        <div class="services__modal">
+                            <div class="services__modal-content">
+                                <h4 class="services__modal-title">Frontend <br> Developer</h4>
+                                <i class="uil uil-times services__modal-close"></i>
+                                
+                                <ul class="services__modal-services grid">
+                                    <li class="services__modal-service">
+                                        <i class="uil uil-check-circle services__modal-icon"></i>
+                                        <p>I develop the user interface.</p>
+                                    </li>
+                                    <li class="services__modal-service">
+                                        <i class="uil uil-check-circle services__modal-icon"></i>
+                                        <p>Web page development.</p>
+                                    </li>
+                                    <li class="services__modal-service">
+                                        <i class="uil uil-check-circle services__modal-icon"></i>
+                                        <p>I create ux element interactions.</p>
+                                    </li>
+                                    <li class="services__modal-service">
+                                        <i class="uil uil-check-circle services__modal-icon"></i>
+                                        <p>I position your company.</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div> -->
+
+                    <!--==================== SERVICES 5 ====================-->
+                    <!-- <div class="services__content">
+                        <div>
+                            <i class="uil uil-arrow services__icon"></i>
+                            <h3 class="services__title">Data <br> Visualization</h3>
+                        </div>
+                        <span class="button button--flex button--small button--link services__button">
+                            View More
+                            <i class="uil uil-arrow-right button__icon"></i>
+                        </span>
+                        
+                        <div class="services__modal">
+                            <div class="services__modal-content">
+                                <h4 class="services__modal-title">Frontend <br> Developer</h4>
+                                <i class="uil uil-times services__modal-close"></i>
+                                
+                                <ul class="services__modal-services grid">
+                                    <li class="services__modal-service">
+                                        <i class="uil uil-check-circle services__modal-icon"></i>
+                                        <p>I develop the user interface.</p>
+                                    </li>
+                                    <li class="services__modal-service">
+                                        <i class="uil uil-check-circle services__modal-icon"></i>
+                                        <p>Web page development.</p>
+                                    </li>
+                                    <li class="services__modal-service">
+                                        <i class="uil uil-check-circle services__modal-icon"></i>
+                                        <p>I create ux element interactions.</p>
+                                    </li>
+                                    <li class="services__modal-service">
+                                        <i class="uil uil-check-circle services__modal-icon"></i>
+                                        <p>I position your company.</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div> -->
+                    <!--==================== SERVICES 6 ====================-->
+                    <!-- <div class="services__content">
+                        <div>
+                            <i class="uil uil-pen services__icon"></i>
+                            <h3 class="services__title">Consultation</h3>
+                        </div>
+                        <span class="button button--flex button--small button--link services__button">
+                            View More
+                            <i class="uil uil-arrow-right button__icon"></i>
+                        </span>
+                        
+                        <div class="services__modal">
+                            <div class="services__modal-content">
+                                <h4 class="services__modal-title">Branding <br> Designer</h4>
+                                <i class="uil uil-times services__modal-close"></i>
+                                
+                                <ul class="services__modal-services grid">
+                                    <li class="services__modal-service">
+                                        <i class="uil uil-check-circle services__modal-icon"></i>
+                                        <p>I develop the user interface.</p>
+                                    </li>
+                                    <li class="services__modal-service">
+                                        <i class="uil uil-check-circle services__modal-icon"></i>
+                                        <p>Web page development.</p>
+                                    </li>
+                                    <li class="services__modal-service">
+                                        <i class="uil uil-check-circle services__modal-icon"></i>
+                                        <p>I create ux element interactions.</p>
+                                    </li>
+                                    <li class="services__modal-service">
+                                        <i class="uil uil-check-circle services__modal-icon"></i>
+                                        <p>I position your company.</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section> -->
+
+            <!--==================== PORTFOLIO ====================-->
+            <section class="portfolio section" id="portfolio">
+                <h2 class="section__title">Projects</h2>
+                <span class="section__subtitle">Most recent work</span>
+                
+                <div class="portfolio__container container swiper-container">
+                    <div class="swiper-wrapper">
+                        <!--==================== PORTFOLIO 1 ====================-->
+                        <div class="portfolio__content grid swiper-slide">
+                            <img src="assets/img/Projects/portfolio.png" alt="" class="portfolio__img">
+
+                            <div class="portfolio__data">
+                                <h3 class="portfolio__title">Personal Portfolio Website</h3>
+                                <p class="portfolio__description">
+                                    Designed and manage my personal website highlighting my professional projects and achievements.
+                                    <!-- By leveraging machine learning techniques, we can analyze the X-ray images and classify them as either Covid-19 positive or negative. -->
+                                </p>
+                                <a href="#" target="blank" class="button button--flex button--small portfolio__button">
+                                    Github 
+                                    <!-- <i class="uil uil-arrow-right button__icon"></i> -->
+                                    <i class="uil uil-github-alt button__icon"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <!--==================== PORTFOLIO 2 ====================-->
+                        <div class="portfolio__content grid swiper-slide">
+                            <img src="assets/img/Projects/covid.png" alt="" class="portfolio__img">
+
+                            <div class="portfolio__data">
+                                <h3 class="portfolio__title">COVID-19 Prediction Using Chest X-Ray Images</h3>
+                                <p class="portfolio__description">
+                                    This project aims to predict Covid-19 infection using X-ray images of patients' chests.
+                                    <!-- By leveraging machine learning techniques, we can analyze the X-ray images and classify them as either Covid-19 positive or negative. -->
+                                </p>
+                                <a href="https://github.com/SarthakChawathe/COVID-19-Prediction-Using-Chest-X-Ray-Images" target="blank" class="button button--flex button--small portfolio__button">
+                                    Github 
+                                    <!-- <i class="uil uil-arrow-right button__icon"></i> -->
+                                    <i class="uil uil-github-alt button__icon"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <!--==================== PORTFOLIO 3 ====================-->
+                        <div class="portfolio__content grid swiper-slide">
+                            <img src="assets/img/Projects/drowsiness.jpeg" alt="" class="portfolio__img">
+
+                            <div class="portfolio__data">
+                                <h3 class="portfolio__title">Driver Drowsiness Detection</h3>
+                                <p class="portfolio__description">
+                                    This project is dedicated to enhancing road safety by employing computer vision technology to detect and prevent driver drowsiness in real-time. 
+                                </p>
+                                <a href="https://github.com/SarthakChawathe/Driver-Drowsiness-Detection" target="blank" class="button button--flex button--small portfolio__button">
+                                    Github
+                                    <!-- <i class="uil uil-arrow-right button__icon"></i> -->
+                                    <i class="uil uil-github-alt button__icon"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!--==================== PORTFOLIO 4 ====================-->
+                        <div class="portfolio__content grid swiper-slide">
+                            <img src="assets/img/Projects/uber.jpeg" alt="" class="portfolio__img">
+
+                            <div class="portfolio__data">
+                                <h3 class="portfolio__title">Uber Data Analysis</h3>
+                                <p class="portfolio__description">
+                                    This project centers around the strategic use of Google Cloud Platform tools to extract actionable insights from Uber's vast dataset.
+                                </p>
+                                <a href="https://github.com/SarthakChawathe/Uber-Data-Analysis" target="blank" class="button button--flex button--small portfolio__button">
+                                    Github
+                                    <!-- <i class="uil uil-arrow-right button__icon"></i> -->
+                                    <i class="uil uil-github-alt button__icon"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!--==================== PORTFOLIO 5 ====================-->
+                        <div class="portfolio__content grid swiper-slide">
+                            <img src="assets/img/Projects/spacex.png" alt="" class="portfolio__img">
+
+                            <div class="portfolio__data">
+                                <h3 class="portfolio__title">SpaceX Falcon9 Landing Prediction</h3>
+                                <p class="portfolio__description">
+                                    This project is dedicated to forecasting the outcome of Falcon 9 rocket landings by leveraging historical data and machine learning techniques.
+                                </p>
+                                <a href="https://github.com/SarthakChawathe/SpaceX-Falcon9-Landing-Prediction" target="blank" class="button button--flex button--small portfolio__button">
+                                    Github
+                                    <!-- <i class="uil uil-arrow-right button__icon"></i> -->
+                                    <i class="uil uil-github-alt button__icon"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!--==================== PORTFOLIO 6 ====================-->
+                        <div class="portfolio__content grid swiper-slide">
+                            <img src="assets/img/Projects/university.jpg" alt="" class="portfolio__img" style="height: 180px; width: 350px;">
+
+                            <div class="portfolio__data">
+                                <h3 class="portfolio__title">University Recommendation System</h3>
+                                <p class="portfolio__description">
+                                    This project is designed to assist students in selecting universities by leveraging the Weighted K-Nearest Neighbors (KNN) algorithm.
+                                </p>
+                                <a href="https://github.com/SarthakChawathe/University-Recommendation-System" target="blank" class="button button--flex button--small portfolio__button">
+                                    Github
+                                    <!-- <i class="uil uil-arrow-right button__icon"></i> -->
+                                    <i class="uil uil-github-alt button__icon"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <!--==================== PORTFOLIO 3 ====================-->
+                        <!-- <div class="portfolio__content grid swiper-slide">
+                            <img src="assets/img/portfolio3.jpg" alt="" class="portfolio__img">
+
+                            <div class="portfolio__data">
+                                <h3 class="portfolio__title">Online Store</h3>
+                                <p class="portfolio__description">
+                                    Website adaptable to all devices, with ui components and animated interactions.
+                                </p>
+                                <a href="#" class="button button--flex button--small portfolio__button">
+                                    Source Code
+                                    <i class="uil uil-arrow-right button__icon"></i>
+                                </a>
+                            </div>
+                        </div> -->
+                    </div>
+                    <div class="swiper-button-next">
+                        <i class="uil uil-angle-right-b swiper-portfolio-icon"></i>
+                    </div>
+                    <div class="swiper-button-prev">
+                        <i class="uil uil-angle-left-b swiper-portfolio-icon"></i>
+                    </div>
+                    
+                    <div class="swiper-pagination"></div>
+                </div>
+            </section>
+
+            <!--==================== Certifications ====================-->
+            <section class="services section" id="certifications">
+                <h2 class="section__title">Certifications</h2>
+                <span class="section__subtitle">Credentials obtained</span>
+                
+                <div class="services__container container grid">
+                    <!--==================== Certification 1 ====================-->
+                    <div>
+                        <div>
+                            <img src="assets/img/Certifications/Google_Data_Analytics.png" alt="">
+                            <!-- <h3 class="services__title">Understanding <br> Business Problem</h3> -->
+                        </div>
+                        <span class="button button--flex button--small button--link services__button">
+                            View More
+                            <i class="uil uil-arrow-right button__icon"></i>
+                        </span>
+                        
+                        <div class="services__modal">
+                            <div class="services__modal-content">
+                                <h4 class="services__modal-title">Google Data Analytics <br>Jun 20, 2022 </h4>
+                                <i class="uil uil-times services__modal-close"></i>
+                                
+                                <ul class="services__modal-services grid">
+                                    <li class="services__modal-service">
+                                        <i class="uil uil-check-circle services__modal-icon"></i>
+                                        <p>Completed the Google Data Analytics Professional Certificate, 
+                                        mastering eight Google-developed courses.
+                                        </p>
+                                    </li>
+                                    <li class="services__modal-service">
+                                        <i class="uil uil-check-circle services__modal-icon"></i>
+                                        <p>Demonstrated proficiency in tools and platforms such as spreadsheets, 
+                                        SQL, Tableau, and R.
+                                        </p>
+                                    </li>
+                                    <li class="services__modal-service">
+                                        <i class="uil uil-check-circle services__modal-icon"></i>
+                                        <p>Executed hands-on, practice-based assessments to prepare for 
+                                        introductory-level Data Analytics roles.
+                                        </p>
+                                    </li>
+                                    <li class="services__modal-service">
+                                        <i class="uil uil-check-circle services__modal-icon"></i>
+                                        <p>Prepared, processed, and analyzed data, ensuring actionable insights.</p>
+                                    </li>
+                                    <li class="services__modal-service">
+                                        <i class="uil uil-check-circle services__modal-icon"></i>
+                                        <p>Shared data insights effectively to drive informed decision-making.</p>
+                                    </li>
+                                    <li class="services__modal-service">
+                                        <i class="uil uil-check-circle services__modal-icon"></i>
+                                        <p>
+                                            <a href="https://drive.google.com/file/d/1tXSY1OeE0G3ID2JLbKZ54Zb-4B_xV4rp/view" target="_blank" style="color: #279EFF;">Certificate verification link</a>
+                                        </p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!--==================== Certification 2 ====================-->
+                    <div>
+                        <div>
+                            <!-- <i class="uil uil-arrow services__icon"></i> -->
+                            <img src="assets/img/Certifications/IBM_Data_Science.png" alt="">
+                            <!-- <h3 class="services__title">Collecting & <br> Storing Data</h3> -->
+                        </div>
+                        <span class="button button--flex button--small button--link services__button">
+                            View More
+                            <i class="uil uil-arrow-right button__icon"></i>
+                        </span>
+                        
+                        <div class="services__modal">
+                            <div class="services__modal-content">
+                                <h4 class="services__modal-title">IBM Data Science <br>Oct 4, 2021</h4>
+                                <i class="uil uil-times services__modal-close"></i>
+                                
+                                <ul class="services__modal-services grid">
+                                    <li class="services__modal-service">
+                                        <i class="uil uil-check-circle services__modal-icon"></i>
+                                        <p>Developed and honed hands-on skills in Data Science and Machine Learning.</p>
+                                    </li>
+                                    <li class="services__modal-service">
+                                        <i class="uil uil-check-circle services__modal-icon"></i>
+                                        <p>Commenced with an orientation in Data Science and its Methodology.</p>
+                                    </li>
+                                    <li class="services__modal-service">
+                                        <i class="uil uil-check-circle services__modal-icon"></i>
+                                        <p>Gained proficiency in various data science tools.</p>
+                                    </li>
+                                    <li class="services__modal-service">
+                                        <i class="uil uil-check-circle services__modal-icon"></i>
+                                        <p>Acquired proficiency in Python and SQL.</p>
+                                    </li>
+                                    <li class="services__modal-service">
+                                        <i class="uil uil-check-circle services__modal-icon"></i>
+                                        <p>Executed Data Visualization and Analysis tasks.</p>
+                                    </li>
+                                    <li class="services__modal-service">
+                                        <i class="uil uil-check-circle services__modal-icon"></i>
+                                        <p>Created Machine Learning models.</p>
+                                    </li>
+                                    <li class="services__modal-service">
+                                        <i class="uil uil-check-circle services__modal-icon"></i>
+                                        <p>Successfully completed multiple cloud-based labs and assignments.</p>
+                                    </li>
+                                    <li class="services__modal-service">
+                                        <i class="uil uil-check-circle services__modal-icon"></i>
+                                        <p>Concluded with a comprehensive Capstone Project to apply 
+                                        and showcase knowledge and skills.
+                                        </p>
+                                    </li>
+                                    <li class="services__modal-service">
+                                        <i class="uil uil-check-circle services__modal-icon"></i>
+                                        <p><a href="https://drive.google.com/file/d/1nSImEWf8oUjTUZtmi4RktJOtSVcjuG90/view" target="_blank" style="color: #279EFF;">Certificate verification link</a>
+                                        </p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--==================== Certification 3 ====================-->
+                    <div>
+                        <div>
+                            <!-- <i class="uil uil-arrow services__icon"></i> -->
+                            <img src="assets/img/Certifications/MTA.png" alt="">
+                            <!-- <h3 class="services__title">Processing <br> Data</h3> -->
+                        </div>
+                        <span class="button button--flex button--small button--link services__button">
+                            View More
+                            <i class="uil uil-arrow-right button__icon"></i>
+                        </span>
+                        
+                        <div class="services__modal">
+                            <div class="services__modal-content">
+                                <h4 class="services__modal-title">MTA: HTML5 Application Development Fundamentals<br>Mar 29, 2019</h4>
+                                <i class="uil uil-times services__modal-close"></i>
+                                
+                                <ul class="services__modal-services grid">
+                                    <li class="services__modal-service">
+                                        <i class="uil uil-check-circle services__modal-icon"></i>
+                                        <p>Demonstrated core HTML5 client application development skills.</p>
+                                    </li>
+                                    <li class="services__modal-service">
+                                        <i class="uil uil-check-circle services__modal-icon"></i>
+                                        <p>Proficient in creating applications compatible with touch-enabled 
+                                        devices (PCs, tablets, and phones).
+                                        </p>
+                                    </li>
+                                    <li class="services__modal-service">
+                                        <i class="uil uil-check-circle services__modal-icon"></i>
+                                        <p>Positioned myself for a future career in technology by 
+                                        participating in the MTA program.
+                                        </p>
+                                    </li>
+                                    <li class="services__modal-service">
+                                        <i class="uil uil-check-circle services__modal-icon"></i>
+                                        <p><a href="https://drive.google.com/file/d/1FTuVhSD7P7H5n3g7lcVr2XG34TJEpRRF/view" target="_blank" style="color: #279EFF;">Certificate verification link</a>
+                                        </p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--==================== Certification 4 ====================-->
+                    <div>
+                        <div>
+                            <!-- <i class="uil uil-arrow services__icon"></i> -->
+                            <img src="assets/img/Certifications/Internshala.png" alt="">
+                            <!-- <h3 class="services__title">Deploying the <br> Right Algorithm</h3> -->
+                        </div>
+                        <span class="button button--flex button--small button--link services__button">
+                            View More
+                            <i class="uil uil-arrow-right button__icon"></i>
+                        </span>
+                        
+                        <div class="services__modal">
+                            <div class="services__modal-content">
+                                <h4 class="services__modal-title">Programming with Python<br>Aug 12, 2018</h4>
+                                <i class="uil uil-times services__modal-close"></i>
+                                
+                                <ul class="services__modal-services grid">
+                                    <li class="services__modal-service">
+                                        <i class="uil uil-check-circle services__modal-icon"></i>
+                                        <p>Successfully completed a six-week online Summer training program on Programming with Python.</p>
+                                    </li>
+                                    <li class="services__modal-service">
+                                        <i class="uil uil-check-circle services__modal-icon"></i>
+                                        <p>Acquired skills in various Python modules, including: <br>
+                                            - Introduction to Python<br>
+                                            - Using Variables in Python<br>
+                                            - Basics of Programming in Python<br>
+                                            - Principles of Object‐oriented Programming<br>
+                                            - Connecting to SQLite Database<br>
+                                            - Developing a GUI with PyQT<br>
+                                            - Application of Python in Various Disciplines</p>
+                                    </li>
+                                    <li class="services__modal-service">
+                                        <i class="uil uil-check-circle services__modal-icon"></i>
+                                        <p><a href="https://drive.google.com/file/d/1aOC6Zn3AR-JacNDKA7A5JQvuT1ztZwM5/view" target="_blank" style="color: #279EFF;">Certificate verification link</a>
+                                        </p>
+                                    </li>
+                                    <!-- <li class="services__modal-service">
+                                        <i class="uil uil-check-circle services__modal-icon"></i>
+                                        <p>I position your company.</p>
+                                    </li> -->
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--==================== Certification 5 ====================-->
+                    <div>
+                        <div>
+                            <!-- <i class="uil uil-arrow services__icon"></i> -->
+                            <img src="assets/img/Certifications/NPTEL.jpg" alt="">
+                            <!-- <h3 class="services__title">Data <br> Visualization</h3> -->
+                        </div>
+                        <span class="button button--flex button--small button--link services__button">
+                            View More
+                            <i class="uil uil-arrow-right button__icon"></i>
+                        </span>
+                        
+                        <div class="services__modal">
+                            <div class="services__modal-content">
+                                <h4 class="services__modal-title">Introduction to Modern Application Development<br>Sep 20, 2017</h4>
+                                <i class="uil uil-times services__modal-close"></i>
+                                
+                                <ul class="services__modal-services grid">
+                                    <li class="services__modal-service">
+                                        <i class="uil uil-check-circle services__modal-icon"></i>
+                                        <p>Successfully completed the "Introduction to Modern Application Development" 
+                                        course offered by NPTEL (National Programme on Technology Enhanced Learning) 
+                                        in collaboration with IIT Madras and Nasscom.
+                                        </p>
+                                    </li>
+                                    <li class="services__modal-service">
+                                        <i class="uil uil-check-circle services__modal-icon"></i>
+                                        <p>
+                                            Gained comprehensive knowledge of modern application development practices, tools, and technologies.
+                                        </p>
+                                    </li>
+                                    <li class="services__modal-service">
+                                        <i class="uil uil-check-circle services__modal-icon"></i>
+                                        <p>
+                                            Acquired skills in software architecture, development frameworks, and industry-standard best practices.
+                                        </p>
+                                    </li>
+                                    <li class="services__modal-service">
+                                        <i class="uil uil-check-circle services__modal-icon"></i>
+                                        <p>
+                                            Demonstrated proficiency in designing and building robust and scalable applications.
+                                        </p>
+                                    </li>
+
+                                    <li class="services__modal-service">
+                                        <i class="uil uil-check-circle services__modal-icon"></i>
+                                        <p><a href="https://drive.google.com/file/d/1wyIwsAKfquHeGunkKTD5Lo6b3e7qSGM_/view?usp=sharing" target="_blank" style="color: #279EFF;">Certificate verification link</a>
+                                        </p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!--==================== SERVICES 6 ====================-->
+                    
+                </div>
+            </section>
+
+
+            
+
+            <!--==================== PROJECT IN MIND ====================-->
+            <!-- <section class="project section">
+                <div class="project__bg">
+                    <div class="project__container container grid">
+                        <div class="project__data">
+                            <h2 class="project__title">You have a new project</h2>
+                            <p class="project__description">
+                                Contact me now and get a 30% discount on your new project.
+                            </p>
+                            <a href="#contact" class="button button--flex button--white">
+                                Contact Me 
+                                <i class="uil uil-message button__icon .project__icon"></i>
+                            </a>
+                        </div>
+                        <img src="assets/img/project.png" alt="" class="project__img">
+                    </div>
+                </div>
+            </section> -->
+
+            
+            <!-- <section class="certifications section">
+                <div class="section__title">Certifications</div>
+                <span class="section__subtitle">My certifications</span>
+            
+                <div class="certifications__container container swiper-container">
+                    <div class="certifications__wrapper">
+                        <!--==================== CERTIFICATION 1 ====================-->
+                        <!-- <div class="certifications__content swiper-slide">
+                            <!-- <div class="certifications__data">
+                                <div class="certifications__header">
+                                    <img src="https://images.credly.com/images/d41de2b7-cbc2-47ec-bcf1-ebecbe83872f/GCC_badge_DA_1000x1000.png" height="250px" width="250px" alt="" class="certifications__img">
+                                    <div>
+                                        <h3 class="certifications__name">Certification Name 1</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="certifications__description">
+                                Description of Certification 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                <a href="https://example.com/certification1" target="_blank">Reference Link</a>
+                            </p> -->
+                            <!-- <li class="clients-item">
+                                <a href="https://drive.google.com/file/d/1wyIwsAKfquHeGunkKTD5Lo6b3e7qSGM_/view?usp=sharing" target="_blank">
+                                <img src="https://lbrce.ac.in/images/nptel/banner3.png" alt="client logo">
+                                </a>
+                            </li>
+                        </div> --> 
+            
+                        <!--==================== CERTIFICATION 2 ====================-->
+                        <!-- <div class="certifications__content swiper-slide">
+                            <div class="certifications__data">
+                                <div class="certifications__header">
+                                    <img src="assets/img/certification2.jpg" alt="" class="certifications__img">
+                                    <div>
+                                        <h3 class="certifications__name">Certification Name 2</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="certifications__description">
+                                Description of Certification 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                <a href="https://example.com/certification2" target="_blank">Reference Link</a>
+                            </p>
+                        </div> -->
+            
+                        <!--==================== CERTIFICATION 3 ====================-->
+                        <!-- <div class="certifications__content swiper-slide">
+                            <div class="certifications__data">
+                                <div class="certifications__header">
+                                    <img src="assets/img/certification3.jpg" alt="" class="certifications__img">
+                                    <div>
+                                        <h3 class="certifications__name">Certification Name 3</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="certifications__description">
+                                Description of Certification 3. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                <a href="https://example.com/certification3" target="_blank">Reference Link</a>
+                            </p>
+                        </div> -->
+                    <!-- </div>
+                    <div class="swiper-pagination swiper-pagination-certifications"></div>
+                </div>
+            </section> -->
+            
+
+
+
+
+            
+
+
+            <!--==================== TESTIMONIAL ====================-->
+            <section class="testimonial section" id="testimonials">
+                <div class="section__title">Testimonials</div>
+                <span class="section__subtitle">Accolades received</span>
+                
+                <div class="testimonial__container container swiper-container">
+                    <div class="swiper-wrapper">
+                        <!--==================== TESTIMONIAL 1 ====================-->
+                        <div class="testimonial__content swiper-slide">
+                            <div class="testimonial__data">
+                                <div class="testimonial__header">
+                                    <img src="assets/img/Testimonials/Shubhada.jpeg" alt="" class="testimonial__img">
+                                    <div>
+                                        <h3 class="testimonial__name">Shabhada Labde</h3>
+                                        <span class="testimonial__client">Professor</span>
+                                    </div>
+                                </div>
+                                <div>
+                                    <i class="uil uil-star .testimonial__icon-star"></i>
+                                    <i class="uil uil-star .testimonial__icon-star"></i>
+                                    <i class="uil uil-star .testimonial__icon-star"></i>
+                                    <i class="uil uil-star .testimonial__icon-star"></i>
+                                    <i class="uil uil-star .testimonial__icon-star"></i>
+                                </div>
+                            </div>
+
+                            <p class="testimonial__description">
+                                We extend our heartfelt appreciation to Mr. Sarthak Chawathe, former TCS employee and Data Analyst, and an esteemed alumnus
+                                of KJ Somaiya Institute of Technology, Mumbai. We are proud to acknowledge his exceptional contributions as a speaker in our
+                                "Machine Learning & Big Data Analytics" winter internship program from 6th Dec to 5th Jan 2022. Additionally, we commend his 
+                                dedication as a mentor to the final year students during their project journey. Mr. Chawathe's expertise, both as a speaker 
+                                and a mentor, greatly enriched the program, leaving a lasting impact on all participants.
+                            </p>
+                        </div>
+                        <!--==================== TESTIMONIAL 2 ====================-->
+                        <div class="testimonial__content swiper-slide">
+                            <div class="testimonial__data">
+                                <div class="testimonial__header">
+                                    <img src="assets/img/Testimonials/Aditi.jpeg" alt="" class="testimonial__img">
+                                    <div>
+                                        <h3 class="testimonial__name">Aditi Sonawane</h3>
+                                        <span class="testimonial__client">Colleague</span>
+                                    </div>
+                                </div>
+                                <div>
+                                    <i class="uil uil-star .testimonial__icon-star"></i>
+                                    <i class="uil uil-star .testimonial__icon-star"></i>
+                                    <i class="uil uil-star .testimonial__icon-star"></i>
+                                    <i class="uil uil-star .testimonial__icon-star"></i>
+                                    <i class="uil uil-star .testimonial__icon-star"></i>
+                                </div>
+                            </div>
+
+                            <p class="testimonial__description">
+                                I highly recommend Sarthak Chawathe for any data-related opportunities. He possess exceptional skills, strong work ethic, and a 
+                                collaborative mindset. Sarthak exhibits exceptional problem-solving abilities, attention to detail, and a positive attitude. 
+                                His effective communication, adaptability, and growth mindset contribute to a harmonious and productive work environment. 
+                                Sarthak is poised for success in Data Science and will make significant contributions.
+                            </p>
+                        </div>
+                        <!--==================== TESTIMONIAL 3 ====================-->
+                        <!-- <div class="testimonial__content swiper-slide">
+                            <div class="testimonial__data">
+                                <div class="testimonial__header">
+                                    <img src="assets/img/testimonial3.jpg" alt="" class="testimonial__img">
+                                    <div>
+                                        <h3 class="testimonial__name">Raul Harris</h3>
+                                        <span class="testimonial__client">Client</span>
+                                    </div>
+                                </div>
+                                <div>
+                                    <i class="uil uil-star .testimonial__icon-star"></i>
+                                    <i class="uil uil-star .testimonial__icon-star"></i>
+                                    <i class="uil uil-star .testimonial__icon-star"></i>
+                                    <i class="uil uil-star .testimonial__icon-star"></i>
+                                    <i class="uil uil-star .testimonial__icon-star"></i>
+                                </div>
+                            </div>
+
+                            <p class="testimonial__description">
+                                I get a good impression, I carry out my project with all the possible quality
+                                and attention and support 24 hours a day.
+                            </p>
+                        </div> -->
+                    </div>
+                    <div class="swiper-pagination swiper-pagination-testimonial"></div>
+                </div>
+            </section>
+
+            <!--==================== CONTACT ME ====================-->
+            <section class="contact section" id="contact">
+                <div class="section__title">Contact Me</div>
+                <span class="section__subtitle">Get in touch</span>
+
+                <div class="contact__container container grid">
+                    <div>
+                        <div class="contact__information">
+                            <i class="uil uil-phone contact__icon"></i>
+            
+                            <!-- <div>
+                                <h3 class="contact__title">Call Me</h3>
+                                <span class="contact__subtitle">812-837-6816</span>
+                            </div> -->
+
+                            <div>
+                                <h3 class="contact__title">Call Me</h3>
+                                <a href="tel:812-837-6816" class="contact__subtitle">812-837-6816</a>
+                            </div>
+                            
+                        </div>
+                        <div class="contact__information">
+                            <i class="uil uil-envelope contact__icon"></i>
+            
+                            <div>
+                                <h3 class="contact__title">Email</h3>
+                                <a href="mailto:sarthak.chawathe2012@gmail.com" span  class="contact__subtitle">sarthak.chawathe2012@gmail.com</span></a>
+                            </div>
+                        </div>
+                        <div class="contact__information">
+                            <i class="uil uil-map-marker contact__icon"></i>
+            
+                            <div>
+                                <h3 class="contact__title">Location</h3>
+                                <span class="contact__subtitle">Bloomington - IN 47408</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <form action="" class=".contact__form grid">
+                        <!-- <div class="contact__inputs grid">
+                            <div class="contact__content">
+                                <label for="" class="contact__label">Name</label>
+                                <input type="text" class="contact__input">
+                            </div>
+                            <div class="contact__content">
+                                <label for="" class="contact__label">Email</label>
+                                <input type="email" class="contact__input">
+                            </div>
+                        </div>
+                        <div class="contact__content">
+                            <label for="" class="contact__label">Title</label>
+                            <input type="text" class="contact__input">
+                        </div>
+                        <div class="contact__content">
+                            <label for="" class="contact__label">Message</label>
+                            <textarea name="" id="" cols="0" rows="7" class="contact__input"></textarea>
+                            <input type="text" class="contact__input">
+                        </div>
+
+                        <div>
+                            <a href="#" class="button button--flex">
+                                Send Message
+                                <i class="uil uil-message button__icon"></i>
+                            </a>
+                        </div> -->
+                        
+                        <section class="mapbox" data-mapbox>
+                            <figure>
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30974.17741831397!2d-86.52638695090386!3d39.16532553265456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8814ac9a9824d739%3A0xe94a890ce573c11b!2sBloomington%2C%20IN%2C%20USA!5e0!3m2!1sen!2sbd!4v1647608789441!5m2!1sen!2sbd"
+                                width="400" height="300" loading="lazy"></iframe>
+                            </figure>
+                        </section>
+
+                    </form>
+                </div>
+            </section>
+
+
+            <!-- <section class="contact section" id="contact">
+                <div class="section__title">Contact Me</div>
+                <span class="section__subtitle">Get in touch</span>
+            
+                <div class="contact__container container grid">
+                    <div>
+                        <div class="contact__information">
+                            <i class="uil uil-phone contact__icon"></i>
+            
+                            <div>
+                                <h3 class="contact__title">Call Me</h3>
+                                <span class="contact__subtitle">812-837-6816</span>
+                            </div>
+                        </div>
+                        <div class="contact__information">
+                            <i class="uil uil-envelope contact__icon"></i>
+            
+                            <div>
+                                <h3 class="contact__title">Email</h3>
+                                <span class="contact__subtitle">sarthak.chawathe2012@gmail.com</span>
+                            </div>
+                        </div>
+                        <div class="contact__information">
+                            <i class="uil uil-map-marker contact__icon"></i>
+            
+                            <div>
+                                <h3 class="contact__title">Location</h3>
+                                <span class="contact__subtitle">Bloomington - Indiana 47401</span>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <form action="" class=".contact__form grid">
+                        <div class="contact__inputs grid">
+                            <div class="contact__content">
+                                <label for="" class="contact__label">Name</label>
+                                <input type="text" class="contact__input">
+                            </div>
+                            <div class="contact__content">
+                                <label for="" class="contact__label">Email</label>
+                                <input type="email" class="contact__input">
+                            </div>
+                        </div>
+                        <div class="contact__content">
+                            <label for="" class="contact__label">Title</label>
+                            <input type="text" class="contact__input">
+                        </div>
+                        <div class="contact__content">
+                            <label for="" class="contact__label">Message</label>
+                            <textarea name="" id="" cols="0" rows="7" class="contact__input"></textarea>
+                            <input type="text" class="contact__input">
+                        </div>
+            
+                        <div>
+                            <a href="mailto:sarthak.chawathe2012@gmail.com" class="button button--flex">
+                                Send Message
+                                <i class="uil uil-message button__icon"></i>
+                            </a>
+                        </div>
+                    </form>
+                </div>
+            </section>
+            
+            <section class="mapbox" data-mapbox>
+                <figure>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30974.17741831397!2d-86.52638695090386!3d39.16532553265456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8814ac9a9824d739%3A0xe94a890ce573c11b!2sBloomington%2C%20IN%2C%20USA!5e0!3m2!1sen!2sbd!4v1647608789441!5m2!1sen!2sbd"
+                    width="400" height="300" loading="lazy"></iframe>
+                </figure>
+            </section>-->
+
+            <!-- <section class="mapbox" data-mapbox>
+                <figure>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30974.17741831397!2d-86.52638695090386!3d39.16532553265456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8814ac9a9824d739%3A0xe94a890ce573c11b!2sBloomington%2C%20IN%2C%20USA!5e0!3m2!1sen!2sbd!4v1647608789441!5m2!1sen!2sbd"
+                    width="400" height="300" loading="lazy"></iframe>
+                </figure>
+            </section> -->
+
+
+        </main>
+
+        <!--==================== FOOTER ====================-->
+        <footer class="footer">
+            <div class="footer__bg">
+                <div class="footer__container container grid">
+                    <div>
+                        <h1 class="footer__title">Sarthak Chawathe</h1>
+                        <span class="footer__subtitle">Data Enthusiast</span>
+                    </div>
+
+                    <ul class="footer__links">
+                        <li>
+                            <a href="#skills" class="footer__link">Skills</a>
+                        </li>
+                        <li>
+                            <a href="#qualification" class="footer__link">Qualification</a>
+                        </li>
+                        <li>
+                            <a href="#portfolio" class="footer__link">Projects</a>
+                        </li>
+                        
+                    </ul>
+
+                    <div class="footer__socials">
+                        <!-- <a href="https://www.facebook.com/" target="_blank" class="footer__social">
+                            <i class="uil uil-facebook-f"></i>
+                        </a>
+                        <a href="https://www.instagram.com/" target="_blank" class="footer__social">
+                            <i class="uil uil-instagram"></i>
+                        </a>
+                        <a href="https://www.twitter.com/" target="_blank" class="footer__social">
+                            <i class="uil uil-twitter-alt"></i>
+                        </a> -->
+
+                        <!-- <a href="https://www.linkedin.com/in/sarthak-chawathe-458251256/" target="_blank" class="footer__social">
+                            <i class="uil uil-linkedin-alt"></i>
+                        </a>
+                        <a href="https://github.com/SarthakChawathe" target="_blank" class="footer__social">
+                            <i class="uil uil-github-alt"></i>
+                        </a> -->
+                        <a href="https://www.instagram.com/sarthakchawathe/" target="_blank" class="footer__social">
+                            <i class="uil uil-instagram"></i>
+                        </a>
+                        <a href="https://www.facebook.com/profile.php?id=100008154316936" target="_blank" class="footer__social">
+                            <i class="uil uil-facebook-f"></i>
+                        </a>
+                        <a href="https://twitter.com/Sarthak_C97" target="_blank" class="footer__social">
+                            <i class="uil uil-twitter-alt"></i>
+                        </a>
+
+                    </div>
+
+                    <p class="footer__copy">&#169; SarthakChawathe. All right reserved</p>
+                </div>
             </div>
-
-            <h3 class="h3">Experience</h3>
-          </div>
-
-          <ol class="timeline-list">
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Assistant Systems Engineer, Tata Consultancy Services(Mumbai, India)</h4>
-
-              <span>2019 — 2020</span>
-
-              <p class="timeline-text">
-                1. Enhanced system designs by 30% and shortened troubleshooting time by 25% by remodeling technical solutions.
-                <br>
-                2. Achieved 20% higher customer satisfaction and resolved a myriad of tickets by streamlining the support processes.
-                <br>
-                3. Utilized Agile methodologies, Java, SQL Server, and Microsoft Office to achieve these results.<br>
-                <!-- 4. Effectively communicated with other system engineering personnel and senior executives
-                on joint projects.<br>
-                5. Streamlined troubleshooting processes to improve system support and enhance
-                communication between the support team and end‑users.<br>
-                6. Efficiently resolved myriad of technical issues concerning software installation and network
-                connectivity.<br>
-                7. Suggested and implemented new systems, continuously checking for accuracy and
-                functionality during changes.<br> -->
-              </p>
-
-            </li>
-
-            <!-- <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Art director</h4>
-
-              <span>2013 — 2015</span>
-
-              <p class="timeline-text">
-                Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit atque corrupti, quos dolores et
-                quas molestias
-                exceptur.
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Personaler</h4>
-
-              <span>2010 — 2013</span>
-
-              <p class="timeline-text">
-                Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit atque corrupti, quos dolores et
-                quas molestias
-                exceptur.
-              </p>
-
-            </li> -->
-
-          </ol>
-
-        </section>
-
-        <section class="timeline">
-
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
-            </div>
-
-            <h3 class="h3">Volunteer/Other Experience</h3>
-          </div>
-
-          <ol class="timeline-list">
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">IU Dining Student Worker, Indiana University Bloomington</h4>
-
-              <span>2022 — Present</span>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Mentor (Machine Learning & Big Data Analytics) & Project Guide, KJ Somaiya Institute of Technology (Mumbai, India)</h4>
-
-              <span>2021 - 2022</span>
-
-            </li>
-
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Technical Team Member, Computer Society Of India (Mumbai, India)</h4>
-
-              <span>2015 - 2019</span>
-
-            </li>
-
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Joint Sports Head, KJ Somaiya Institute of Technology (Mumbai, India)</h4>
-
-              <span>2017 - 2018</span>
-
-            </li>
-
-            <!-- <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Art director</h4>
-
-              <span>2013 — 2015</span>
-
-              <p class="timeline-text">
-                Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit atque corrupti, quos dolores et
-                quas molestias
-                exceptur.
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Personaler</h4>
-
-              <span>2010 — 2013</span>
-
-              <p class="timeline-text">
-                Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit atque corrupti, quos dolores et
-                quas molestias
-                exceptur.
-              </p>
-
-            </li> -->
-
-          </ol>
-
-        </section>
-
-        <section class="skill">
-
-          <h3 class="h3 skills-title">Skills</h3>
-
-          <ul class="skills-list content-card">
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Programming and Development</h5>
-                <data value="80">80%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 80%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Data Analysis and Machine Learning:</h5>
-                <data value="90">90%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 90%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Big Data Technologies</h5>
-                <data value="75">75%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 75%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Data Management and Visualization</h5>
-                <data value="90">90%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 90%;"></div>
-              </div>
-
-            </li>
-
-          </ul>
-
-        </section>
-
-        <a href="assets/Resume/Sarthak_s_Overleaf_Resume__Data_Science_.pdf" target="_blank">
-          <button class="form-btn" type="button" data-form-btn>
-            <span>Download Resume</span>
-          </button>
+        </footer>
+
+        <!--==================== SCROLL TOP ====================-->
+        <a href="#" class="scrollup" id="scroll-up">
+            <i class="uil uil-arrow-up scrollup__icon"></i>
         </a>
-           
-        
-        
 
-      </article>
 
+        <!--==================== SWIPER JS ====================-->
+        <script src="assets/js/swiper-bundle.min.js"></script>
 
-
-
-
-      <!--
-        - #PROJECTS
-      -->
-
-      <article class="projects" data-page="projects">
-
-        <header>
-          <h2 class="h2 article-title">Projects</h2>
-        </header>
-
-        <section class="projects">
-
-          <ul class="filter-list">
-
-            <li class="filter-item">
-              <button class="active" data-filter-btn>All</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Personal</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>University</button>
-            </li>
-
-            <!-- <li class="filter-item">
-              <button data-filter-btn>Industry</button>
-            </li> -->
-
-          </ul>
-
-          <div class="filter-select-box">
-
-            <button class="filter-select" data-select>
-
-              <div class="select-value" data-selecct-value>Select category</div>
-
-              <div class="select-icon">
-                <ion-icon name="chevron-down"></ion-icon>
-              </div>
-
-            </button>
-
-            <ul class="select-list">
-
-              <li class="select-item">
-                <button data-select-item>All</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>Personal</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>University</button>
-              </li>
-
-              <!-- <li class="select-item">
-                <button data-select-item>Industry</button>
-              </li> -->
-
-            </ul>
-
-          </div>
-
-          <ul class="project-list">
-
-            <!-- <li class="project-item  active" data-filter-item data-category="industry">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-1.jpg" alt="finance" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Finance</h3>
-
-                <p class="project-category">Industry</p>
-
-              </a>
-            </li> -->
-
-            <!-- <li class="project-item  active" data-filter-item data-category="industry">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-2.png" alt="orizon" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Orizon</h3>
-
-                <p class="project-category">Industry</p>
-
-              </a>
-            </li> -->
-
-            <li class="project-item  active" data-filter-item data-category="personal">
-              <a href="https://github.com/SarthakChawathe/Driver-Drowsiness-Detection" target="blank">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="https://www.startupticker.ch/assets/images/articles/ams%20DMS%20950.jpeg" alt="driver drowsiness detection," loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Driver Drowsiness Detection</h3>
-
-                <p class="project-category">Personal</p>
-
-              </a>
-            </li>
-
-            
-            
-
-            <li class="project-item  active" data-filter-item data-category="university">
-              <a href="https://github.com/SarthakChawathe/University-Recommendation-System" target="blank">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="https://cdn2.careeraddict.com/uploads/article/59817/illustration-woman-university-building.jpg" alt="university recommendation system" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">University Recommendation System</h3>
-
-                <p class="project-category">University</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="personal">
-              <a href="https://github.com/SarthakChawathe/Uber-Data-Analysis" target="blank">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="https://image.cnbcfm.com/api/v1/image/106656783-1597073190121-gettyimages-1137475171-GERMANY_UBER.jpeg?v=1659111518" alt="uber data analysis" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Uber Data Analysis</h3>
-
-                <p class="project-category">Personal</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="personal">
-              <a href="https://github.com/SarthakChawathe/SpaceX-Falcon9-Landing-Prediction" target="blank">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="https://ik.imagekit.io/wd57f9aqb/1665688587-spacex-2.jpeg?tr=w-3840" alt="spaceX falcon9 landing prediction" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">SpaceX Falcon9 Landing Prediction</h3>
-
-                <p class="project-category">Personal</p>
-
-              </a>
-            </li>
-
-            
-
-
-            <li class="project-item  active" data-filter-item data-category="personal">
-              <a href="https://github.com/SarthakChawathe/COVID-19-Prediction-Using-Chest-X-Ray-Images" target="blank">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="https://medicaldialogues.in/h-upload/2023/03/09/204246-chest-x-rays.webp" alt="covid 19 prediction," loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Covid-19 Prediction Using X-Ray Images</h3>
-
-                <p class="project-category">Personal</p>
-
-              </a>
-            </li>
-
-            <!-- <li class="project-item active" data-filter-item data-category="personal">
-              <a href="https://github.com/SarthakChawathe/COVID-19-Prediction-Using-Chest-X-Ray-Images" target="blank">
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-                  <img src="https://medicaldialogues.in/h-upload/2023/03/09/204246-chest-x-rays.webp" alt="covid 19 prediction," loading="lazy">
-                </figure>
-                <h3 class="project-title">Covid-19 Prediction Using X-Ray Images</h3>
-                <p class="project-category">Personal</p>
-                <span class="project-timeline">2023 - Ongoing</span>
-              </a>
-            </li> -->
-
-
-            
-
-            <!-- <li class="project-item  active" data-filter-item data-category="industry">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-7.png" alt="summary" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Summary</h3>
-
-                <p class="project-category">Industry</p>
-
-              </a>
-            </li> -->
-
-            <!-- <li class="project-item  active" data-filter-item data-category="university">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-8.jpg" alt="task manager" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Task Manager</h3>
-
-                <p class="project-category">University</p>
-
-              </a>
-            </li> -->
-
-            <!-- <li class="project-item  active" data-filter-item data-category="industry">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-9.png" alt="arrival" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Arrival</h3>
-
-                <p class="project-category">Industry</p>
-
-              </a>
-            </li> -->
-
-          </ul>
-
-        </section>
-
-      </article>
-
-
-
-
-
-      <!-- 
-        - #BLOG
-      -->
-
-      <!-- <article class="blog" data-page="blog">
-
-        <header>
-          <h2 class="h2 article-title">Blog</h2>
-        </header>
-
-        <section class="blog-posts">
-
-          <ul class="blog-posts-list">
-
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-1.jpg" alt="Design conferences in 2022" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">Design conferences in 2022</h3>
-
-                  <p class="blog-text">
-                    Veritatis et quasi architecto beatae vitae dicta sunt, explicabo.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-2.jpg" alt="Best fonts every designer" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">Best fonts every designer</h3>
-
-                  <p class="blog-text">
-                    Sed ut perspiciatis, nam libero tempore, cum soluta nobis est eligendi.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-3.jpg" alt="Design digest #80" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">Design digest #80</h3>
-
-                  <p class="blog-text">
-                    Excepteur sint occaecat cupidatat no proident, quis nostrum exercitationem ullam corporis suscipit.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-4.jpg" alt="UI interactions of the week" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">UI interactions of the week</h3>
-
-                  <p class="blog-text">
-                    Enim ad minim veniam, consectetur adipiscing elit, quis nostrud exercitation ullamco laboris nisi.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-5.jpg" alt="The forgotten art of spacing" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">The forgotten art of spacing</h3>
-
-                  <p class="blog-text">
-                    Maxime placeat, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-6.jpg" alt="Design digest #79" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">Design digest #79</h3>
-
-                  <p class="blog-text">
-                    Optio cumque nihil impedit uo minus quod maxime placeat, velit esse cillum.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-          </ul>
-
-        </section>
-
-      </article> -->
-
-
-
-
-
-      <!--
-        - #CONTACT
-      -->
-
-      <article class="contact" data-page="contact">
-
-        <header>
-          <h2 class="h2 article-title">Contact</h2>
-        </header>
-
-        <!-- <section class="mapbox" data-mapbox>
-          <figure>
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d199666.5651251294!2d-121.58334177520186!3d38.56165006739519!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x809ac672b28397f9%3A0x921f6aaa74197fdb!2sSacramento%2C%20CA%2C%20USA!5e0!3m2!1sen!2sbd!4v1647608789441!5m2!1sen!2sbd"
-              width="400" height="300" loading="lazy"></iframe>
-          </figure>
-        </section> -->
-
-        <section class="mapbox" data-mapbox>
-          <figure>
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30974.17741831397!2d-86.52638695090386!3d39.16532553265456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8814ac9a9824d739%3A0xe94a890ce573c11b!2sBloomington%2C%20IN%2C%20USA!5e0!3m2!1sen!2sbd!4v1647608789441!5m2!1sen!2sbd"
-              width="400" height="300" loading="lazy"></iframe>
-          </figure>
-        </section>
-        
-
-        <section class="contact-form">
-
-          <h3 class="h3 form-title">Contact Form</h3>
-
-          <form action="#" class="form" data-form>
-
-            <div class="input-wrapper">
-              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
-
-              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
-            </div>
-
-            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
-
-            <button class="form-btn" type="submit" data-form-btn>
-              <ion-icon name="paper-plane"></ion-icon>
-              <span>Send Message</span>
-            </button>
-
-          </form>
-
-        </section>
-
-
-        <!-- <section class="contact-form">
-          <h3 class="h3 form-title">Contact Form</h3>
-          <form action="submit_form.php" method="post" class="form" data-form>
-              <div class="input-wrapper">
-                  <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
-                  <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
-              </div>
-              <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
-              <button class="form-btn" type="submit" data-form-btn>
-                  <ion-icon name="paper-plane"></ion-icon>
-                  <span>Send Message</span>
-              </button>
-          </form>
-      </section> -->
-
-
-
-      </article>
-
-    </div>
-
-  </main>
-
-
-
-
-
-
-  <!--
-    - custom js link
-  -->
-  <script src="./assets/js/script.js"></script>
-
-  <!--
-    - ionicon link
-  -->
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
-</body>
-
+        <!--==================== MAIN JS ====================-->
+        <script src="assets/js/main.js"></script>
+    </body>
 </html>
