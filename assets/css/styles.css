@@ -1497,6 +1497,15 @@ img {
         grid-template-columns: repeat(2, 1fr);
     }
 
+    /* Additional adjustments for medium screens */
+    .footer_bg {
+        /* Make sure the background image covers the entire container */
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    
+    /* Ensure there's no unwanted margin or padding on the body or HTML */
     body, html {
         margin: 0;
         padding: 0;
