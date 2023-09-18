@@ -1529,3 +1529,10 @@ img {
     }
 
 }
+
+/* For ipad mini and ipad air */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .nav a {
+        font-size: 0.7rem; /* Adjust the font size to your desired size */
+      }
+}    
