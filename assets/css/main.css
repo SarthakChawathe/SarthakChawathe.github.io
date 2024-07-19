@@ -900,7 +900,8 @@ section,
 }
 
 .portfolio .portfolio-content .portfolio-info .details-link {
-  left: 50%;
+  left: 45%;
+  /* position: absolute; */
   font-size: 34px;
   line-height: 0;
 }
