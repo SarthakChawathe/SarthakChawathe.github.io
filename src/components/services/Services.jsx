@@ -34,7 +34,7 @@ const Services = () => {
                     View More
                     <HiOutlineArrowSmRight className="services__button-icon" />
                 </span> */}
-                <a href="https://www.hackerrank.com/certificates/f80b4e156b6c" className="services__button" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.hackerrank.com/certificates/030cd46b2763" className="services__button" target="_blank" rel="noopener noreferrer">
                     View More
                     <HiOutlineArrowSmRight className="services__button-icon" />
                 </a>
@@ -79,7 +79,7 @@ const Services = () => {
                     View More
                     <HiOutlineArrowSmRight className="services__button-icon" />
                 </span> */}
-                <a href="https://www.hackerrank.com/certificates/030cd46b2763" className="services__button" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.hackerrank.com/certificates/f80b4e156b6c" className="services__button" target="_blank" rel="noopener noreferrer">
                     View More
                     <HiOutlineArrowSmRight className="services__button-icon" />
                 </a>
