@@ -1,5 +1,11 @@
-nvm install 16
-nvm use 16
+# Redeploy
+npm cache clean --force
+rm -rf node_modules package-lock.json
+npm install
+npm install react-scripts@latest
+
+// nvm install 16
+// nvm use 16
 
 
 npm run build
