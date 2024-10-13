@@ -12,7 +12,7 @@ import UberV1 from "../../assets/img2/Projects/uber.jpeg"
 import SpaceX from "../../assets/img2/Projects/spacex.png"
 import UniMatch from "../../assets/img2/Projects/university.jpg"
 import SplitRight from "../../assets/img2/Projects/pdf_final.png"
-import AutoML from "../../assets/img2/Projects/AutoML.png"
+import AutoML from "../../assets/img2/Projects/AutoML_2.png"
 
 export const projectsData = [
     {

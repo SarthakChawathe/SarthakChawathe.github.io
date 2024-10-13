@@ -4,10 +4,13 @@ rm -rf node_modules package-lock.json
 npm install
 npm install react-scripts@latest
 
-// nvm install 16
-// nvm use 16
+nvm install 18
+nvm use 18
 
 
 npm run build
+
+npm install -g serve
+serve -s build
 
 npm run deploy
