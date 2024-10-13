@@ -12,7 +12,7 @@ import UberV1 from "../../assets/img2/Projects/uber.jpeg"
 import SpaceX from "../../assets/img2/Projects/spacex.png"
 import UniMatch from "../../assets/img2/Projects/university.jpg"
 import SplitRight from "../../assets/img2/Projects/pdf_final.png"
-
+import AutoML from "../../assets/img2/Projects/AutoML.png"
 
 export const projectsData = [
     {
@@ -24,13 +24,20 @@ export const projectsData = [
     },
     {
         id: 2,
+        image: AutoML,
+        title: "AutoML",
+        category: "Machine Learning",
+        link: "https://github.com/SarthakChawathe/AutoML",
+    },
+    {
+        id: 3,
         image: RAG,
         title: "OKVQA Using Multi Modal RAG",
         category: "Machine Learning",
         link: "https://github.com/SarthakChawathe/E533-Project",
     },
     {
-        id: 3,
+        id: 4,
         image: UberV2,
         title: "Uber Data Visualization V2",
         category: "Machine Learning",
@@ -38,21 +45,21 @@ export const projectsData = [
     },
 
     {
-        id: 4,
+        id: 5,
         image: Covid,
         title: "COVID-19 Prediction Using Chest X-Ray",
         category: "Machine Learning",
         link: "https://github.com/SarthakChawathe/COVID-19-Prediction-Using-Chest-X-Ray-Images",
     },
     {
-        id: 5,
+        id: 6,
         image: Drowsiness,
         title: "Driver Drowsiness Detection",
         category: "Machine Learning",
         link: "https://github.com/SarthakChawathe/Driver-Drowsiness-Detection",
     },
     {
-        id: 6,
+        id: 7,
         image: UberV1,
         title: "Uber Data Analysis V1",
         category: "Machine Learning",
@@ -60,21 +67,21 @@ export const projectsData = [
     },
 
     {
-        id: 7,
+        id: 8,
         image: SpaceX,
         title: "SpaceX Falcon9 Landing Prediction",
         category: "Machine Learning",
         link: "https://github.com/SarthakChawathe/SpaceX-Falcon9-Landing-Prediction",
     },
     {
-        id: 8,
+        id: 9,
         image: UniMatch,
         title: "UniMatch: University Recommendation System",
         category: "Machine Learning",
         link: "https://github.com/SarthakChawathe/University-Recommendation-System",
     },
     {
-        id: 9,
+        id: 10,
         image: SplitRight,
         title: "SplitRight: PDF Splitting OCR tool",
         category: "Other",
