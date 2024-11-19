@@ -33,7 +33,7 @@ const Projects = () => {
                         <span onClick={(e) => {
                             handleClick(e, index);
                         }}
-                        className={`${active === index ? 'active-project' : ''} project__item`}
+                        className={`${active === index ? 'active__project' : ''} project__item`}
                         key={index}>{item.name}</span>
                     )
                 })}
