@@ -39,7 +39,7 @@ const Footer = () => {
                 </a>
                     
             </div>
-            <p class="footer__copy">&#169; Copyright 2024 Sarthak Chawathe. All right reserved</p>
+            <p class="footer__copy">&#169; Copyright 2025 Sarthak Chawathe. All right reserved</p>
             <span className="footer__copy"></span>
         </div>
     </footer>

@@ -5,8 +5,10 @@ import IUImage from "../../assets/IU.jpeg";
 import KJImage from "../../assets/KJSIT_2.jpeg"; 
 import ChimeraImage from "../../assets/Chimera.jpeg"; 
 import HCImage from "../../assets/HC.png"; 
-import TCSImage from "../../assets/tcs.png"; 
+// import TCSImage from "../../assets/tcs.png"; 
 import CSIImage from "../../assets/CSI_Blue.jpeg"; 
+import BerkshireImage from "../../assets/BH.png"; 
+import AplusImage from "../../assets/Aplus.png"; 
 
 const Qualification = () => {
     const [toggleState, setToggleState] = useState(1)
@@ -80,12 +82,12 @@ const Qualification = () => {
                     : "qualification__content"}>
                     <div className="qualification__data">
                         <div>
-                            <img src={ChimeraImage} alt="IU Logo" width="50px" height="50px" />
-                            <h3 className="qualification__title">Founding Machine Learning Engineer and Data Analyst</h3>
-                            <span className="qualification__subtitle">OneChimera - California</span>
+                            <img src={BerkshireImage} alt="IU Logo" width="50px" height="50px" />
+                            <h3 className="qualification__title">Data Scientist</h3>
+                            <span className="qualification__subtitle">Berkshire Hathaway</span>
                             <div className="qualification__calendar">
                                 <HiOutlineCalendar className="qualification__calendar-icon" />
-                                May 2024 - Present
+                                July 2024 - Present
                             </div>
                         </div>
                         <div>
@@ -93,6 +95,23 @@ const Qualification = () => {
                             <span className="qualification__line"></span>
                         </div>
                     </div>
+
+                    <div className="qualification__data">
+                        <div>
+                            <img src={ChimeraImage} alt="IU Logo" width="50px" height="50px" />
+                            <h3 className="qualification__title">Founding Machine Learning Engineer and Data Analyst</h3>
+                            <span className="qualification__subtitle">OneChimera - California</span>
+                            <div className="qualification__calendar">
+                                <HiOutlineCalendar className="qualification__calendar-icon" />
+                                May 2024 - Oct 2024
+                            </div>
+                        </div>
+                        <div>
+                            <span className="qualification__rounder"></span>
+                            <span className="qualification__line"></span>
+                        </div>
+                    </div>
+
                     <div className="qualification__data">
                         <div></div>
                         <div>
@@ -109,6 +128,7 @@ const Qualification = () => {
                             </div>
                         </div>
                     </div>
+
                     <div className="qualification__data">
                         <div>
                             <img src={HCImage} alt="IU Logo" width="50px" height="50px" /> 
@@ -124,7 +144,24 @@ const Qualification = () => {
                             <span className="qualification__line"></span>
                         </div>
                     </div>
+
                     <div className="qualification__data">
+                        <div>
+                            <img src={AplusImage} alt="IU Logo" width="50px" height="50px" /> 
+                            <h3 className="qualification__title">Data Analyst</h3>
+                            <span className="qualification__subtitle">Aplus Datalytics - India</span>
+                            <div className="qualification__calendar">
+                                <HiOutlineCalendar className="qualification__calendar-icon" />
+                                Jan 2019 - Jul 2022
+                            </div>
+                        </div>
+                        <div>
+                            <span className="qualification__rounder"></span>
+                            <span className="qualification__line"></span>
+                        </div>
+                    </div>
+
+                    {/* <div className="qualification__data">
                         <div></div>
                         <div>
                             <span className="qualification__rounder"></span>
@@ -139,7 +176,7 @@ const Qualification = () => {
                                 Jul 2019 - Dec 2020
                             </div>
                         </div>
-                    </div>
+                    </div> */}
                 </div>
 
                 <div className={toggleState === 3 ? "qualification__content qualification__content-active"

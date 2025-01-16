@@ -1,7 +1,8 @@
 import React from 'react';
 import "./about.css";
 import AboutImg from "../../assets/code.gif";
-import CV from "../../assets/Sarthak_Chawathe.pdf";
+// import CV from "../../assets/Sarthak_Chawathe.pdf";
+import CV from "../../assets/Updated.pdf";
 import Info from "./Info";
 
 const About = () => {
@@ -16,7 +17,7 @@ const About = () => {
                 <p className="about__description">
                     I spend my days convincing computers to find patterns in data, and my nights wondering why they prefer random noise. My secret weapon? A steady supply of coffee and an occasional existential crisis.
                 </p>
-                <a href="/Sarthak_Chawathe.pdf" target="_blank" className="button button--flex">
+                <a href="/Updated.pdf" target="_blank" className="button button--flex">
                     Resume
                     <svg
                         class="button__icon"
