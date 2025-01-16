@@ -59,6 +59,7 @@ const Qualification = () => {
                             <span className="qualification__line"></span>
                         </div>
                     </div>
+                    
                     <div className="qualification__data">
                         <div></div>
                         <div>
@@ -84,10 +85,10 @@ const Qualification = () => {
                         <div>
                             <img src={BerkshireImage} alt="IU Logo" width="50px" height="50px" />
                             <h3 className="qualification__title">Data Scientist</h3>
-                            <span className="qualification__subtitle">Berkshire Hathaway</span>
+                            <span className="qualification__subtitle">Berkshire Hathaway - USA</span>
                             <div className="qualification__calendar">
                                 <HiOutlineCalendar className="qualification__calendar-icon" />
-                                July 2024 - Present
+                                Jul 2024 - Present
                             </div>
                         </div>
                         <div>
@@ -95,23 +96,6 @@ const Qualification = () => {
                             <span className="qualification__line"></span>
                         </div>
                     </div>
-
-                    <div className="qualification__data">
-                        <div>
-                            <img src={ChimeraImage} alt="IU Logo" width="50px" height="50px" />
-                            <h3 className="qualification__title">Founding Machine Learning Engineer and Data Analyst</h3>
-                            <span className="qualification__subtitle">OneChimera - California</span>
-                            <div className="qualification__calendar">
-                                <HiOutlineCalendar className="qualification__calendar-icon" />
-                                May 2024 - Oct 2024
-                            </div>
-                        </div>
-                        <div>
-                            <span className="qualification__rounder"></span>
-                            <span className="qualification__line"></span>
-                        </div>
-                    </div>
-
                     <div className="qualification__data">
                         <div></div>
                         <div>
@@ -119,7 +103,18 @@ const Qualification = () => {
                             <span className="qualification__line"></span>
                         </div>
                         <div>
-                            <img src={IUImage} alt="IU Logo" width="50px" height="50px" /> 
+                            <img src={ChimeraImage} alt="IU Logo" width="50px" height="50px" />  
+                            <h3 className="qualification__title">Founding MLE & Data Analyst</h3>
+                            <span className="qualification__subtitle">OneChimera Incorporated - California</span>
+                            <div className="qualification__calendar">
+                                <HiOutlineCalendar className="qualification__calendar-icon" />
+                                May 2024 - Oct 2024
+                            </div>
+                        </div>
+                    </div>
+                    <div className="qualification__data">
+                        <div>
+                            <img src={IUImage} alt="IU Logo" width="50px" height="50px" />  
                             <h3 className="qualification__title">Graduate Teaching Assistant</h3>
                             <span className="qualification__subtitle">Indiana University Bloomington - Indiana</span>
                             <div className="qualification__calendar">
@@ -127,29 +122,32 @@ const Qualification = () => {
                                 Aug 2023 - May 2024
                             </div>
                         </div>
-                    </div>
-
-                    <div className="qualification__data">
-                        <div>
-                            <img src={HCImage} alt="IU Logo" width="50px" height="50px" /> 
-                            <h3 className="qualification__title">Data Analyst</h3>
-                            <span className="qualification__subtitle">HiCounselor - California</span>
-                            <div className="qualification__calendar">
-                                <HiOutlineCalendar className="qualification__calendar-icon" />
-                                May 2023 - Aug 2023
-                            </div>
-                        </div>
                         <div>
                             <span className="qualification__rounder"></span>
                             <span className="qualification__line"></span>
                         </div>
                     </div>
-
+                    <div className="qualification__data">
+                        <div></div>
+                        <div>
+                            <span className="qualification__rounder"></span>
+                            <span className="qualification__line"></span>
+                        </div>
+                        <div>
+                            <img src={HCImage} alt="IU Logo" width="50px" height="50px" />  
+                            <h3 className="qualification__title">Data Analyst</h3>
+                            <span className="qualification__subtitle">HiCounselor - California</span>
+                            <div className="qualification__calendar">
+                                <HiOutlineCalendar className="qualification__calendar-icon" />
+                                May 2023 - May 2023
+                            </div>
+                        </div>
+                    </div>
                     <div className="qualification__data">
                         <div>
-                            <img src={AplusImage} alt="IU Logo" width="50px" height="50px" /> 
+                            <img src={AplusImage} alt="IU Logo" width="50px" height="50px" />  
                             <h3 className="qualification__title">Data Analyst</h3>
-                            <span className="qualification__subtitle">Aplus Datalytics - India</span>
+                            <span className="qualification__subtitle">Apalus Datalytics - India</span>
                             <div className="qualification__calendar">
                                 <HiOutlineCalendar className="qualification__calendar-icon" />
                                 Jan 2019 - Jul 2022
@@ -160,23 +158,6 @@ const Qualification = () => {
                             <span className="qualification__line"></span>
                         </div>
                     </div>
-
-                    {/* <div className="qualification__data">
-                        <div></div>
-                        <div>
-                            <span className="qualification__rounder"></span>
-                            <span className="qualification__line"></span>
-                        </div>
-                        <div>
-                            <img src={TCSImage} alt="IU Logo" width="50px" height="50px" /> 
-                            <h3 className="qualification__title">Assistant Systems Engineer</h3>
-                            <span className="qualification__subtitle">Tata Consultancy Services - India</span>
-                            <div className="qualification__calendar">
-                                <HiOutlineCalendar className="qualification__calendar-icon" />
-                                Jul 2019 - Dec 2020
-                            </div>
-                        </div>
-                    </div> */}
                 </div>
 
                 <div className={toggleState === 3 ? "qualification__content qualification__content-active"

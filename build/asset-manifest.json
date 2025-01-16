@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.e2199b3f.css",
-    "main.js": "/static/js/main.64e17ae2.js",
+    "main.js": "/static/js/main.7582cb94.js",
     "static/media/pdf_final.png": "/static/media/pdf_final.56369a8eabd1c324050f.png",
     "static/media/code.gif": "/static/media/code.18bcba89d4290c3f7580.gif",
     "static/media/uber.jpeg": "/static/media/uber.df5f8ed2df5a151be3d8.jpeg",
@@ -17,7 +17,6 @@
     "static/media/Aditi.jpeg": "/static/media/Aditi.eff71f62060353bf836b.jpeg",
     "static/media/Vartan.jpeg": "/static/media/Vartan.9c101d11cbdd75cb4a41.jpeg",
     "static/media/project2.webp": "/static/media/project2.fc906070e9796abe3650.webp",
-    "static/media/Sarthak_Chawathe.pdf": "/static/media/Sarthak_Chawathe.43d4ac0a6da97e23edac.pdf",
     "static/media/Microsoft_logo.png": "/static/media/Microsoft_logo.caea853daab2c2874729.png",
     "static/media/project3.webp": "/static/media/project3.b094b696f75369270c95.webp",
     "static/media/portfolio.png": "/static/media/portfolio.bfb03a254a31e3c37049.png",
@@ -35,10 +34,10 @@
     "static/media/IBM_logo.png": "/static/media/IBM_logo.1de98f38877af289aa8a.png",
     "index.html": "/index.html",
     "main.e2199b3f.css.map": "/static/css/main.e2199b3f.css.map",
-    "main.64e17ae2.js.map": "/static/js/main.64e17ae2.js.map"
+    "main.7582cb94.js.map": "/static/js/main.7582cb94.js.map"
   },
   "entrypoints": [
     "static/css/main.e2199b3f.css",
-    "static/js/main.64e17ae2.js"
+    "static/js/main.7582cb94.js"
   ]
 }
