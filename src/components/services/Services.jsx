@@ -24,6 +24,51 @@ const Services = () => {
     
         <div className="services__container container grid">
 
+        <div className="services__content">
+                <div>
+                    {/* <HiOutlineClipboardList className="services__icon" /> */}
+                    <img src={Microsoft} alt="Web + App Developer" className="services__img"/>
+                    <h3 className="services__title">Career Essentials <br />in Data Analysis</h3>
+                </div>
+                {/* <span className="services__button" onClick={() => toggleTab(1)}>
+                    View More
+                    <HiOutlineArrowSmRight className="services__button-icon" />
+                </span> */}
+                <a href="https://www.linkedin.com/learning/certificates/1bf05a45dfebc4e23bff7db9ff8c29ba63449be685015a6221fa838b5274c924?u=87254282" className="services__button" target="_blank" rel="noopener noreferrer">
+                    View More
+                    <HiOutlineArrowSmRight className="services__button-icon" />
+                </a>
+                {/* <div className={toggleState === 1 ? "services__modal active-modal" : "services__modal"}>
+                    <div className="services__modal-content">
+                        <HiX onClick={() => toggleTab(0)} className="services__modal-close" />
+                        <h3 className="services__modal-title">Developer</h3>
+                        <p className="services__modal-description">
+                            Over 3 years of experience in web development providing quality work.
+                        </p>
+                        <ul className="services__modal-services grid">
+                            <li className="services__modal-service">
+                                <HiOutlineCheckCircle className="services__modal-icon" />
+                                <p className="services__modal-info">
+                                    Web page and app development
+                                </p>
+                            </li>
+                            <li className="services__modal-service">
+                                <HiOutlineCheckCircle className="services__modal-icon" />
+                                <p className="services__modal-info">
+                                    Integrate creative colloboration
+                                </p>
+                            </li>
+                            <li className="services__modal-service">
+                                <HiOutlineCheckCircle className="services__modal-icon" />
+                                <p className="services__modal-info">
+                                    Provide product mockups
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                </div> */}
+            </div>
+
             <div className="services__content">
                 <div>
                     {/* <HiOutlineClipboardList className="services__icon" /> */}
