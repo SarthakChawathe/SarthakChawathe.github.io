@@ -1,0 +1,64 @@
+<header class="app-bar">
+  <button class="sidebar-toggle" type="button" aria-label="Open navigation" aria-controls="site-sidebar" aria-expanded="false"><i class="bi bi-list" aria-hidden="true"></i></button>
+  <nav class="breadcrumbs" aria-label="Breadcrumb"><a data-route="home">SC</a><span aria-hidden="true">/</span><span class="current-page-name">New chat</span></nav>
+  <div class="bar-actions">
+    <a class="bar-github" href="https://github.com/SarthakChawathe" target="_blank" rel="noopener noreferrer">GitHub <i class="bi bi-arrow-up-right" aria-hidden="true"></i></a>
+    <div class="more-wrapper">
+      <button class="more-toggle" type="button" aria-label="More actions" aria-expanded="false" title="More actions"><i class="bi bi-three-dots" aria-hidden="true"></i></button>
+      <div class="more-menu" role="menu" hidden>
+        <a role="menuitem" data-route="projects">Browse all projects</a>
+        <a role="menuitem" data-route="offclock">Outside of work</a>
+        <a role="menuitem" data-route="resume" target="_blank" rel="noopener noreferrer">Open resume</a>
+        <a role="menuitem" href="mailto:sarthak.chawathe2012@gmail.com">Email Sarthak</a>
+      </div>
+    </div>
+    <button class="theme-toggle" type="button" aria-label="Switch to dark theme" aria-pressed="false" title="Switch theme"><i class="bi bi-moon-stars" aria-hidden="true"></i></button>
+  </div>
+</header>
+<div class="sidebar-backdrop" hidden></div>
+<aside class="site-sidebar" id="site-sidebar" aria-label="Portfolio navigation" aria-hidden="true" inert>
+  <div class="sidebar-top">
+    <a class="sidebar-brand" data-route="home"><span class="brand-monogram">SC</span><span>Sarthak Chawathe<small>AI Engineer</small></span></a>
+    <button class="sidebar-close" type="button" aria-label="Close navigation"><i class="bi bi-x-lg" aria-hidden="true"></i></button>
+  </div>
+  <a class="new-chat-link" data-route="home"><i class="bi bi-plus-lg" aria-hidden="true"></i> New chat</a>
+  <button class="search-trigger" type="button"><i class="bi bi-search" aria-hidden="true"></i><span>Search portfolio</span><kbd>⌘ K</kbd></button>
+  <div class="recent-chat-section" hidden><p class="sidebar-label">Recent chats</p><nav class="recent-chat-list" aria-label="Recent questions"></nav></div>
+  <p class="sidebar-label">Explore</p>
+  <nav class="sidebar-navigation" aria-label="Main pages">
+    <a data-route="projects"><i class="bi bi-grid" aria-hidden="true"></i> Projects</a>
+    <a data-route="experience"><i class="bi bi-briefcase" aria-hidden="true"></i> Experience</a>
+    <a data-route="offclock"><i class="bi bi-camera" aria-hidden="true"></i> Off the clock</a>
+    <a data-route="gaming"><i class="bi bi-controller" aria-hidden="true"></i> Gaming</a>
+    <a data-route="anime"><i class="bi bi-tv" aria-hidden="true"></i> Anime</a>
+    <a data-route="contact"><i class="bi bi-envelope" aria-hidden="true"></i> Contact</a>
+  </nav>
+  <p class="sidebar-label project-label">AI &amp; machine learning</p>
+  <nav class="sidebar-projects" aria-label="Selected projects">
+    <a data-route="rag"><span class="project-indicator indicator-green"></span> Multimodal RAG</a>
+    <a data-route="automl"><span class="project-indicator indicator-blue"></span> AutoML</a>
+    <a data-route="unimatch"><span class="project-indicator indicator-orange"></span> UniMatch</a>
+    <a data-route="covid"><span class="project-indicator indicator-blue"></span> COVID-19 X-ray</a>
+    <a data-route="drowsiness"><span class="project-indicator indicator-green"></span> Drowsiness detection</a>
+    <a data-route="spacex"><span class="project-indicator indicator-orange"></span> SpaceX landing</a>
+  </nav>
+  <p class="sidebar-label">Data &amp; tools</p>
+  <nav class="sidebar-projects" aria-label="Data and tools projects">
+    <a data-route="uber-viz"><span class="project-indicator indicator-blue"></span> Uber visualization</a>
+    <a data-route="uber-analysis"><span class="project-indicator indicator-green"></span> Uber analysis</a>
+    <a data-route="splitright"><span class="project-indicator indicator-orange"></span> SplitRight OCR</a>
+    <a class="all-projects-link" data-route="projects">All projects <i class="bi bi-arrow-up-right" aria-hidden="true"></i></a>
+  </nav>
+  <div class="sidebar-bottom">
+    <a href="mailto:sarthak.chawathe2012@gmail.com"><i class="bi bi-at" aria-hidden="true"></i> Email Sarthak</a>
+    <div><a href="https://github.com/SarthakChawathe" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="bi bi-github" aria-hidden="true"></i></a><a href="https://www.linkedin.com/in/sarthak-chawathe/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="bi bi-linkedin" aria-hidden="true"></i></a><a href="https://www.instagram.com/sarthakchawathe/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="bi bi-instagram" aria-hidden="true"></i></a></div>
+  </div>
+</aside>
+<div class="command-backdrop" hidden>
+  <section class="command-dialog" role="dialog" aria-modal="true" aria-labelledby="command-title">
+    <h2 class="visually-hidden" id="command-title">Search portfolio</h2>
+    <label class="command-input-wrap"><i class="bi bi-search" aria-hidden="true"></i><input class="command-input" type="search" placeholder="Search projects, pages, and skills..." autocomplete="off"><kbd>ESC</kbd></label>
+    <div class="command-results" role="listbox" aria-label="Search results"></div>
+    <p class="command-hint">Navigate with your keyboard <kbd>↑</kbd> <kbd>↓</kbd> <kbd>↵</kbd></p>
+  </section>
+</div>

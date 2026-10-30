@@ -1,15 +1,23 @@
-# Responsive Portfolio Website Sarthak
+# Sarthak Chawathe Portfolio
 
-- Responsive Personal Portfolio Website Using HTML CSS & JavaScript
-- Smooth scrolling in each section.
-- Compatible with all mobile devices and with a beautiful and pleasant user interface.
+React portfolio built with Vite and deployed as a static site to GitHub Pages.
 
 ## Development
 
-The home page is assembled from the HTML fragments in `components/`. Because the browser loads these fragments with `fetch`, serve the repository through a local web server instead of opening `index.html` directly. For example:
+Install dependencies and run the local development server:
 
 ```sh
-python3 -m http.server
+npm ci
+npm run dev
 ```
 
-Then open `http://localhost:8000`.
+Vite serves the site at `http://127.0.0.1:5173` and supports direct navigation to each portfolio and project page.
+
+## Production build
+
+```sh
+npm run build
+npm run preview
+```
+
+The production site is written to `dist/`. The GitHub Actions workflow deploys this directory to GitHub Pages when changes are pushed to `main`. Enable **GitHub Actions** as the Pages build and deployment source in repository settings.
