@@ -5,19 +5,19 @@ import Sky, { isDarkTime, sceneFor, timeOfDay } from './Sky.jsx';
 import { profile, projectGroups, projects, socials } from './data.js';
 
 const pages = {
-  '/': ['New chat', null], '/index.html': ['New chat', null],
-  '/projects.html': ['Side projects', ProjectsPage], '/experience.html': ['Experience', ExperiencePage],
-  '/about.html': ['About', AboutPage], '/off-the-clock.html': ['Off the clock', OffClockPage],
-  '/gaming.html': ['Gaming', GamingPage], '/anime.html': ['Anime', AnimePage], '/contact.html': ['Contact', ContactPage]
+  '/': ['New chat', null],
+  '/projects': ['Side projects', ProjectsPage], '/experience': ['Experience', ExperiencePage],
+  '/about': ['About', AboutPage], '/off-the-clock': ['Off the clock', OffClockPage],
+  '/gaming': ['Gaming', GamingPage], '/anime': ['Anime', AnimePage], '/contact': ['Contact', ContactPage]
 };
 
 const navigation = [
-  ['/projects.html', 'bi-grid', 'Side projects'],
-  ['/experience.html', 'bi-git', 'Experience'],
-  ['/gaming.html', 'bi-controller', 'Gaming'],
-  ['/anime.html', 'bi-tv', 'Anime'],
-  ['/off-the-clock.html', 'bi-camera', 'Off the clock'],
-  ['/contact.html', 'bi-at', 'Contact']
+  ['/projects', 'bi-grid', 'Side projects'],
+  ['/experience', 'bi-git', 'Experience'],
+  ['/gaming', 'bi-controller', 'Gaming'],
+  ['/anime', 'bi-tv', 'Anime'],
+  ['/off-the-clock', 'bi-camera', 'Off the clock'],
+  ['/contact', 'bi-at', 'Contact']
 ];
 
 const storage = {
@@ -25,8 +25,9 @@ const storage = {
   set(key, value) { try { localStorage.setItem(key, value); } catch { /* storage unavailable */ } }
 };
 
-const normalize = (pathname) => pathname.replace(/\/$/, '') || '/';
-const isHomePath = (path) => path === '/' || path === '/index.html';
+// Old links used one HTML file per page (/projects.html, /projects/rag.html); map them to clean paths.
+const normalize = (pathname) => pathname.replace(/(\/index)?\.html$/, '').replace(/\/$/, '') || '/';
+const isHomePath = (path) => path === '/';
 const knownPath = (path) => Boolean(pages[path]) || projects.some((item) => `/${item.route}` === path);
 
 function useTheme() {
@@ -43,9 +44,13 @@ function useTheme() {
   return { theme, preference, setPreference, scene: sceneFor(theme, time) };
 }
 
-// Every page is also a real HTML file for direct loads; after that, links swap pages in place.
+// Single-page routing from index.html. GitHub Pages serves the same app as 404.html for deep links.
 function useRouter() {
-  const [route, setRoute] = useState(() => ({ path: normalize(location.pathname), search: location.search, key: 0 }));
+  const [route, setRoute] = useState(() => {
+    const path = normalize(location.pathname);
+    if (path !== location.pathname) history.replaceState(null, '', path + location.search);
+    return { path, search: location.search, key: 0 };
+  });
   useEffect(() => {
     const onPop = () => setRoute((current) => ({ path: normalize(location.pathname), search: location.search, key: current.key + 1 }));
     const onClick = (event) => {
@@ -138,7 +143,7 @@ function App() {
       <header className="topbar">
         <button className="icon-button sidebar-open" type="button" aria-label="Toggle sidebar" data-tip="Toggle sidebar" onClick={toggleSidebar}><i className="bi bi-layout-sidebar" aria-hidden="true" /></button>
         <nav className="crumbs" aria-label="Breadcrumb">
-          {project && <><a href="/projects.html">Side projects</a><span className="crumb-sep">/</span></>}
+          {project && <><a href="/projects">Side projects</a><span className="crumb-sep">/</span></>}
           <span className="crumb-current" aria-current="page"><span key={title} className="swap-in">{title}</span></span>
         </nav>
         <div className="topbar-actions">
@@ -199,14 +204,14 @@ function Sidebar({ path, chatTitle, newChat, toggle, openSearch, preference, set
         {navigation.map(([href, icon, label]) => <a key={href} href={href} aria-current={path === href ? 'page' : undefined}><i className={`bi ${icon}`} aria-hidden="true" />{label}</a>)}
       </nav>
       {projectGroups.map((group) => <nav className="nav-group" key={group.category} aria-label={`${group.label} projects`}>
-        <p className="nav-label">{group.label}<a href="/projects.html" aria-label="All projects"><i className="bi bi-arrow-up-right" aria-hidden="true" /></a></p>
+        <p className="nav-label">{group.label}<a href="/projects" aria-label="All projects"><i className="bi bi-arrow-up-right" aria-hidden="true" /></a></p>
         {projects.filter((item) => item.category === group.category).map((item) => <a key={item.id} href={`/${item.route}`} aria-current={path === `/${item.route}` ? 'page' : undefined}>
           <img src={item.image} alt="" loading="lazy" /><span className="nav-text">{item.shortTitle}</span><span className={`dot dot-${group.tone}`} />
         </a>)}
       </nav>)}
     </div>
     <div className="sidebar-footer">
-      <a className="profile-link" href="/about.html"><img src={profile.photo} alt="" /><span><strong>{profile.name}</strong><small>{profile.role}</small></span></a>
+      <a className="profile-link" href="/about"><img src={profile.photo} alt="" /><span><strong>{profile.name}</strong><small>{profile.role}</small></span></a>
       <button className={`icon-button is-quiet settings-button${settingsOpen ? ' is-open' : ''}`} type="button" aria-label="Settings" aria-expanded={settingsOpen} onClick={() => setSettingsOpen((open) => !open)}><i className="bi bi-gear" aria-hidden="true" /></button>
       {settingsOpen && <div className="menu settings-menu">
         <p className="menu-label">Theme</p>
@@ -228,7 +233,7 @@ function CommandPalette({ close, navigate, ask }) {
   const inputRef = useRef(null);
   const q = query.trim().toLowerCase();
   const matches = (text) => text.toLowerCase().includes(q);
-  const goTo = [['/', 'bi-pencil-square', 'New chat'], ...navigation, ['/about.html', 'bi-person', 'About']]
+  const goTo = [['/', 'bi-pencil-square', 'New chat'], ...navigation, ['/about', 'bi-person', 'About']]
     .filter(([, , label]) => matches(label)).map(([href, icon, label]) => ({ href, icon, label }));
   const projectItems = projects.filter((item) => matches(`${item.shortTitle} ${item.type} ${item.summary}`))
     .map((item) => ({ href: `/${item.route}`, label: item.shortTitle, image: item.image, meta: `${item.type} · ${projectGroups.find((group) => group.category === item.category).label}` }));

@@ -147,7 +147,7 @@ export function AboutPage() {
         <li><strong>Ship and keep learning.</strong> Thoughtful, measurable progress over complexity for its own sake.</li>
       </ol>
     </section>
-    <div className="button-row"><a className="button-primary" href="/experience.html">Experience</a><a className="button-ghost" href={profile.resume} {...external}>Resume<i className="bi bi-arrow-up-right" aria-hidden="true" /></a></div>
+    <div className="button-row"><a className="button-primary" href="/experience">Experience</a><a className="button-ghost" href={profile.resume} {...external}>Resume<i className="bi bi-arrow-up-right" aria-hidden="true" /></a></div>
   </div>;
 }
 
@@ -165,7 +165,7 @@ export function OffClockPage() {
         <li><span>Travel</span><small>Find a new route</small></li>
         <li><span>Photography</span><small>Keep the moment</small></li>
         <li><span>Home cooking</span><small>Make something good</small></li>
-        <li><a href="/gaming.html">Gaming</a><small>Hitman, Call of Duty, The Last of Us</small></li>
+        <li><a href="/gaming">Gaming</a><small>Hitman, Call of Duty, The Last of Us</small></li>
       </ul>
     </section>
   </div>;
@@ -185,7 +185,7 @@ export function GamingPage() {
         <strong>{game.title}</strong><small>{game.genre}</small>
       </a></li>)}</ul>
     </section>
-    <section className="cta-card"><p>Up for a match, or want to talk shop instead?</p><a className="button-ghost" href="/contact.html">Get in touch<i className="bi bi-arrow-up-right" aria-hidden="true" /></a></section>
+    <section className="cta-card"><p>Up for a match, or want to talk shop instead?</p><a className="button-ghost" href="/contact">Get in touch<i className="bi bi-arrow-up-right" aria-hidden="true" /></a></section>
   </div>;
 }
 
@@ -222,6 +222,6 @@ export function NotFoundPage() {
     <p className="eyebrow">404</p>
     <h1>This page went out of scope.</h1>
     <p className="page-lede">The link may be old, or the page was renamed.</p>
-    <div className="button-row"><a className="button-primary" href="/">New chat</a><a className="button-ghost" href="/projects.html">All projects</a></div>
+    <div className="button-row"><a className="button-primary" href="/">New chat</a><a className="button-ghost" href="/projects">All projects</a></div>
   </div>;
 }

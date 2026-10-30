@@ -2,49 +2,33 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Explore Sarthak Chawathe's work in AI engineering, machine learning, and data science.">
-  <title>Sarthak Chawathe | AI Engineer</title>
-  <link rel="shortcut icon" href="assets/images_copy/Logos/Website Logos/SarthakChawathe.ico">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Sarthak Chawathe · AI Engineer</title>
+  <meta name="description" content="Sarthak Chawathe is an AI Engineer in Austin, TX working on LLM evaluation and healthcare AI. Ask the portfolio agent about his projects, experience and stack.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Sarthak Chawathe · AI Engineer">
+  <meta property="og:description" content="AI Engineer working on LLM evaluation and healthcare AI. Ask the portfolio agent about projects, experience and stack.">
+  <meta property="og:image" content="https://sarthakchawathe.github.io/assets/images_copy/Personal/IMG_8538_square.jpg">
+  <meta name="theme-color" content="#f6f6f4">
+  <link rel="icon" href="/assets/images_copy/Logos/Website Logos/SarthakChawathe.ico">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/css/app.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <!-- Runs before first paint so the page opens in the visitor's time-of-day theme without a flash. -->
+  <script>
+    try {
+      var preference = localStorage.getItem('portfolio-theme-pref') || 'auto';
+      var preview = new URLSearchParams(location.search).get('time');
+      var hour = new Date().getHours();
+      var dark = preference === 'auto' ? (preview ? preview === 'evening' || preview === 'night' : hour < 5 || hour >= 17) : preference === 'dark';
+      document.documentElement.dataset.theme = dark ? 'dark' : 'light';
+      document.documentElement.style.colorScheme = dark ? 'dark' : 'light';
+      document.querySelector('meta[name="theme-color"]').content = dark ? '#121212' : '#f6f6f4';
+    } catch (error) {}
+  </script>
 </head>
-<body class="app-page home-page" data-page="New chat">
-  <div id="app-shell"></div>
-  <main class="home-main">
-    <section class="home-content" aria-labelledby="home-title">
-      <a class="home-identity" href="experience.html">
-        <img src="assets/images_copy/Personal/IMG_8538_square.jpg" alt="">
-        <span><strong>Sarthak Chawathe</strong><small>AI Engineer · Austin, TX</small></span>
-      </a>
-      <p class="home-kicker"><span class="status-pulse"></span> PORTFOLIO / AI ENGINEERING</p>
-      <h1 id="home-title">What would you like<br>to know about <span>Sarthak?</span></h1>
-      <p class="home-subtitle">Explore the work, projects, and ideas behind my path in AI.</p>
-      <form class="portfolio-chat" id="portfolio-chat-form">
-        <label class="visually-hidden" for="portfolio-question">Ask about Sarthak's work</label>
-        <textarea id="portfolio-question" name="question" rows="2" placeholder="Ask about my work, projects, or experience..." required></textarea>
-        <div class="prompt-controls">
-          <span class="prompt-hint"><i class="bi bi-stars" aria-hidden="true"></i> Portfolio guide</span>
-          <div class="prompt-actions">
-            <button class="voice-question" type="button" aria-label="Dictate a question" title="Dictate a question" hidden><i class="bi bi-mic" aria-hidden="true"></i></button>
-            <button class="send-question" type="submit" aria-label="Send question" title="Send question"><i class="bi bi-arrow-up" aria-hidden="true"></i></button>
-          </div>
-        </div>
-      </form>
-      <div class="suggestions" aria-label="Suggested questions">
-        <button type="button" data-question="What AI projects have I built?">AI projects</button>
-        <button type="button" data-question="Tell me about my multimodal RAG project">Multimodal RAG</button>
-        <button type="button" data-question="What is my professional experience?">Experience</button>
-        <button type="button" data-question="What tools and skills do I work with?">Skills &amp; tools</button>
-        <button type="button" data-question="How can we get in touch?">Contact</button>
-      </div>
-      <section class="chat-response" id="chat-response" aria-live="polite" hidden><div class="conversation-turns" id="conversation-turns"></div></section>
-      <p class="home-footnote"><i class="bi bi-info-circle" aria-hidden="true"></i> Answers are based on the information published in this portfolio.</p>
-    </section>
-  </main>
-  <script src="assets/js/app.js"></script>
+<body>
+  <div id="root"></div>
+  <script type="module" src="/src/main.jsx"></script>
 </body>
 </html>

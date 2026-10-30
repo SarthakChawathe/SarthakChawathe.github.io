@@ -101,7 +101,7 @@ export function useConversation() {
 
 export function Hero({ chat, promptRef, openSearch }) {
   return <section className="hero" aria-labelledby="hero-title">
-    <a className="identity-pill" href="/about.html"><img src={profile.photo} alt="" />{profile.name} · {profile.role}</a>
+    <a className="identity-pill" href="/about"><img src={profile.photo} alt="" />{profile.name} · {profile.role}</a>
     <h1 id="hero-title" className="hero-title">
       {`What do you want to know about ${profile.firstName}?`.split(' ').map((word, index) => <span key={index} style={{ '--i': index }}>{word}{' '}</span>)}
     </h1>

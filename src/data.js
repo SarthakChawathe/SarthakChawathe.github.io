@@ -1,6 +1,6 @@
 export const projects = [
   {
-    id: 'rag', route: 'projects/rag.html', title: 'Outside Knowledge Visual Question Answering Using Multi-Modal RAG',
+    id: 'rag', route: 'projects/rag', title: 'Outside Knowledge Visual Question Answering Using Multi-Modal RAG',
     shortTitle: 'Multimodal RAG', category: 'AI & machine learning', type: 'LLM / RAG', association: 'Indiana University Bloomington',
     image: '/assets/images_copy/Projects/ragv4.jpg', images: ['/assets/images_copy/Projects/ragv4.jpg', '/assets/images_copy/Projects/ragv5.jpg'],
     description: 'The project explores Retrieval-Augmented Generation for visual question answering. It introduces outside knowledge dynamically during inference rather than relying on extensive retraining.',
@@ -8,7 +8,7 @@ export const projects = [
     source: 'https://github.com/SarthakChawathe/E533-Project', tags: ['RAG', 'Multimodal', 'LLMs']
   },
   {
-    id: 'auto_ml', route: 'projects/auto_ml.html', title: 'AutoML', shortTitle: 'AutoML',
+    id: 'auto_ml', route: 'projects/auto_ml', title: 'AutoML', shortTitle: 'AutoML',
     category: 'AI & machine learning', type: 'Machine learning', association: 'Personal',
     image: '/assets/images_copy/Projects/AutoML.png', images: ['/assets/images_copy/Projects/AutoML.png', '/assets/images_copy/Projects/AutoML_2.png'],
     description: 'A user-friendly application designed to streamline machine-learning model development. Users can upload datasets, perform exploratory data analysis, and train and evaluate models without extensive coding knowledge.',
@@ -16,7 +16,7 @@ export const projects = [
     source: 'https://github.com/SarthakChawathe/AutoML', tags: ['AutoML', 'Modeling', 'Data']
   },
   {
-    id: 'covid', route: 'projects/covid.html', title: 'COVID-19 Prediction Using Chest X-Ray Images', shortTitle: 'COVID-19 X-ray prediction',
+    id: 'covid', route: 'projects/covid', title: 'COVID-19 Prediction Using Chest X-Ray Images', shortTitle: 'COVID-19 X-ray prediction',
     category: 'AI & machine learning', type: 'Machine learning', association: 'Personal',
     image: '/assets/images_copy/Projects/covid.png', images: ['/assets/images_copy/Projects/covid.png'],
     description: 'A machine-learning project that analyzes chest X-ray images and classifies them as COVID-19 positive or negative.',
@@ -24,7 +24,7 @@ export const projects = [
     source: 'https://github.com/SarthakChawathe/COVID-19-Prediction-Using-Chest-X-Ray-Images', tags: ['Computer vision', 'Healthcare']
   },
   {
-    id: 'drowsiness', route: 'projects/drowsiness.html', title: 'Driver Drowsiness Detection', shortTitle: 'Driver drowsiness detection',
+    id: 'drowsiness', route: 'projects/drowsiness', title: 'Driver Drowsiness Detection', shortTitle: 'Driver drowsiness detection',
     category: 'AI & machine learning', type: 'Computer vision', association: 'Personal',
     image: '/assets/images_copy/Projects/drowsiness.jpeg', images: ['/assets/images_copy/Projects/drowsiness.jpeg'],
     description: 'A real-time computer-vision system that analyzes video input for signs of driver drowsiness using eye tracking and triggers an alarm.',
@@ -32,7 +32,7 @@ export const projects = [
     source: 'https://github.com/SarthakChawathe/Driver-Drowsiness-Detection', tags: ['Computer vision', 'Detection']
   },
   {
-    id: 'spaceX', route: 'projects/spaceX.html', title: 'SpaceX Falcon 9 Landing Prediction', shortTitle: 'SpaceX landing prediction',
+    id: 'spaceX', route: 'projects/spaceX', title: 'SpaceX Falcon 9 Landing Prediction', shortTitle: 'SpaceX landing prediction',
     category: 'AI & machine learning', type: 'Machine learning', association: 'Personal',
     image: '/assets/images_copy/Projects/spacex.png', images: ['/assets/images_copy/Projects/spacex.png', '/assets/images_copy/Projects/spacex-falcon-9-landing-01.png'],
     description: 'A machine-learning project that analyzes Falcon 9 mission parameters and historical data to predict whether a landing will succeed.',
@@ -40,7 +40,7 @@ export const projects = [
     source: 'https://github.com/SarthakChawathe/SpaceX-Falcon9-Landing-Prediction', tags: ['Classification', 'SpaceX']
   },
   {
-    id: 'unimatch', route: 'projects/unimatch.html', title: 'UniMatch - University Recommendation System', shortTitle: 'UniMatch',
+    id: 'unimatch', route: 'projects/unimatch', title: 'UniMatch - University Recommendation System', shortTitle: 'UniMatch',
     category: 'AI & machine learning', type: 'Recommendation', association: 'Indiana University Bloomington',
     image: '/assets/images_copy/Projects/Biotechnology-universities-in-US.jpg', images: ['/assets/images_copy/Projects/Biotechnology-universities-in-US.jpg'],
     description: 'A university recommendation system for international master’s students, using a weighted K-nearest-neighbors approach to personalize recommendations.',
@@ -48,7 +48,7 @@ export const projects = [
     source: 'https://github.com/SarthakChawathe/University-Recommendation-System', tags: ['Recommendation', 'KNN']
   },
   {
-    id: 'uber-viz', route: 'projects/uber_data_viz.html', title: 'Uber Data Visualization V2', shortTitle: 'Uber data visualization',
+    id: 'uber-viz', route: 'projects/uber_data_viz', title: 'Uber Data Visualization V2', shortTitle: 'Uber data visualization',
     category: 'Data', type: 'Data visualization', association: 'Personal & Indiana University Bloomington',
     image: '/assets/images_copy/Projects/uber.jpeg', images: ['/assets/images_copy/Projects/uber.jpeg', '/assets/images_copy/Projects/uber_another.jpeg'],
     description: 'Visual analysis of Uber’s New York City operational data, using exploratory methods and K-means clustering to surface insights related to urban mobility.',
@@ -56,7 +56,7 @@ export const projects = [
     source: 'https://github.com/SarthakChawathe/Data-Visualization-Project', extra: ['YouTube video', 'https://youtu.be/Yg0r8Nf9Wy8'], tags: ['Analytics', 'Visualization']
   },
   {
-    id: 'uber-analysis', route: 'projects/uber_data_analyis.html', title: 'Uber Data Analysis V1', shortTitle: 'Uber data analysis',
+    id: 'uber-analysis', route: 'projects/uber_data_analyis', title: 'Uber Data Analysis V1', shortTitle: 'Uber data analysis',
     category: 'Data', type: 'ETL and data analysis', association: 'Personal',
     image: '/assets/images_copy/Projects/Uber_v2.jpg', images: ['/assets/images_copy/Projects/Uber_v2.jpg'],
     description: 'A data project using Google Cloud Platform tools to extract actionable insights from Uber’s dataset.',
@@ -64,7 +64,7 @@ export const projects = [
     source: 'https://github.com/SarthakChawathe/Uber-Data-Analysis', extra: ['Dashboard', 'https://lookerstudio.google.com/s/sQyFkRE_B0o'], tags: ['ETL', 'Analytics']
   },
   {
-    id: 'splitright', route: 'projects/splitright.html', title: 'SplitRight', shortTitle: 'SplitRight',
+    id: 'splitright', route: 'projects/splitright', title: 'SplitRight', shortTitle: 'SplitRight',
     category: 'Tools & applications', type: 'OCR', association: 'Indiana University Luddy Hackathon',
     image: '/assets/images_copy/Projects/pdf_splitter_hackathon.jpeg', images: ['/assets/images_copy/Projects/pdf_splitter_hackathon.jpeg', '/assets/images_copy/Projects/pdf_final.png'],
     description: 'A standalone PDF-splitting tool designed for legal firms. OCR automates separating and organizing combined document files.',
@@ -72,7 +72,7 @@ export const projects = [
     source: 'https://github.com/SarthakChawathe/SplitRight', extra: ['Live tool', 'https://www.pranavbadhe.live/SplitRight/'], tags: ['OCR', 'PDF']
   },
   {
-    id: 'portfolio', route: 'projects/portfolio.html', title: 'Personal Portfolio Website', shortTitle: 'Portfolio website',
+    id: 'portfolio', route: 'projects/portfolio', title: 'Personal Portfolio Website', shortTitle: 'Portfolio website',
     category: 'Tools & applications', type: 'Web / design', association: 'Personal',
     image: '/assets/images_copy/Projects/portfolio.png', images: ['/assets/images_copy/Projects/portfolio.png'],
     description: 'A personal website highlighting professional projects and achievements, continuously updated as the portfolio evolves.',

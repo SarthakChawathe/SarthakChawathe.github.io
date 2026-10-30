@@ -11,7 +11,9 @@ npm ci
 npm run dev
 ```
 
-Vite serves the site at `http://127.0.0.1:5173` and supports direct navigation to each portfolio and project page.
+Vite serves the site at `http://127.0.0.1:5173`.
+
+The app is a single page: `index.html` mounts React and `src/App.jsx` routes clean URLs such as `/projects` and `/projects/rag`. GitHub Pages has no rewrite rules, so the build also writes the app to `dist/404.html`; deep links load it and the router renders the right page. Old `.html` URLs redirect to their clean equivalents.
 
 ## Production build
 

@@ -57,7 +57,7 @@ const intents = [
       text: `${profile.name} is an ${profile.role} based in ${profile.location}. He has been shipping software since 2019: enterprise systems at Tata Consultancy Services, an MS in Data Science at Indiana University, and now LLM evaluation and healthcare AI with CitiusTech and Mayo Clinic. He likes the whole arc of the work, from shaping messy data to making a model dependable enough for clinicians and product teams to trust.`,
       fast: `${profile.role} in ${profile.location}, working on LLM evaluation and healthcare AI with CitiusTech and Mayo Clinic.`,
       artifacts: [{ type: 'stats', items: [[`${career.years}+`, 'Years building'], [String(experience.length), 'Teams'], [String(projects.length), 'Projects']] }],
-      ctas: [['Read the about page', '/about.html']],
+      ctas: [['Read the about page', '/about']],
       followups: ['What is he building right now?', `Why should I hire ${profile.firstName}?`, 'What is his tech stack?']
     })
   },
@@ -72,7 +72,7 @@ const intents = [
       text: `By day he is an AI Engineer at CitiusTech and an AI/ML Engineer at Mayo Clinic. That means prompt engineering, fine-tuning and evaluating Gemini-based LLM workflows for clinical and operational use, including an evaluation service that scores model quality across multiple metrics. He also builds decision-support prototypes on Vertex AI and BigQuery.`,
       fast: 'LLM evaluation and healthcare AI at CitiusTech and Mayo Clinic, on Gemini, Vertex AI and BigQuery.',
       artifacts: [{ type: 'file', name: 'mayo-clinic.md', lang: 'Markdown', lines: ['# Mayo Clinic · AI/ML Engineer', '', ...experience.find((item) => item.company === 'Mayo Clinic').highlights.map((line) => `- ${line}`)] }],
-      ctas: [['Open full experience', '/experience.html']],
+      ctas: [['Open full experience', '/experience']],
       followups: ['How does he evaluate LLMs?', 'Show me his AI projects', `Why should I hire ${profile.firstName}?`]
     })
   },
@@ -87,7 +87,7 @@ const intents = [
       text: 'At Mayo Clinic he designed evaluation frameworks covering 50+ LLM test scenarios: prompt testing, error analysis, edge-case validation and response-quality checks. Together with prompt engineering and fine-tuning, that work raised the accuracy, safety and contextual reliability of Gemini-based workflows by 30%. He also turns adversarial risks and edge cases into user stories, which made the solutions about 40% more robust.',
       fast: '50+ LLM test scenarios and a multi-metric evaluation service at Mayo Clinic; reliability up 30%.',
       artifacts: [{ type: 'quotes', items: testimonials.slice(0, 1) }],
-      ctas: [['Open full experience', '/experience.html']],
+      ctas: [['Open full experience', '/experience']],
       followups: ['What is his tech stack?', 'Tell me about the RAG project']
     })
   },
@@ -114,7 +114,7 @@ const intents = [
       text: `About ${career.years} years across teams: enterprise systems at TCS, teaching and a data-science master’s at Indiana University, ML engineering at OneChimera, analytics at Gradient, and now healthcare AI with CitiusTech and Mayo Clinic.`,
       fast: 'TCS → Indiana University → OneChimera → Gradient → CitiusTech and Mayo Clinic.',
       artifacts: [{ type: 'terminal', command: `git log --author="${profile.firstName}" --career`, meta: `${experience.length} commits`, rows: careerLog() }],
-      ctas: [['Open full experience', '/experience.html']],
+      ctas: [['Open full experience', '/experience']],
       followups: ['What is his stack?', 'What has he built?', 'How do I reach him?']
     })
   },
@@ -137,7 +137,7 @@ const intents = [
       text: `He holds an MS in Data Science from ${education[0].school} and a BE in Computer Engineering from ${education[1].school}. At Indiana he was also a teaching assistant for the graduate course Data Science On-Ramp.`,
       fast: 'MS in Data Science from Indiana University; BE in Computer Engineering from K.J. Somaiya.',
       artifacts: [{ type: 'list', items: education.map((item) => ({ title: item.school, meta: `${item.degree} · ${item.dates}`, initials: item.school.split(' ').map((word) => word[0]).join('').slice(0, 2) })) }],
-      ctas: [['Open full experience', '/experience.html']],
+      ctas: [['Open full experience', '/experience']],
       followups: ['Walk me through his experience', 'What has he built?']
     })
   },
@@ -159,7 +159,7 @@ const intents = [
       steps: [{ kind: 'read', label: 'data/gaming.js' }],
       text: 'Off the clock he plays Hitman, Call of Duty and The Last of Us: a bit of stealth, a bit of chaos and one very good story.',
       fast: 'Hitman, Call of Duty and The Last of Us.',
-      ctas: [['Open gaming', '/gaming.html']],
+      ctas: [['Open gaming', '/gaming']],
       followups: ['What else does he do for fun?', 'How do I reach him?']
     })
   },
@@ -170,7 +170,7 @@ const intents = [
       steps: [{ kind: 'read', label: 'data/off-the-clock.js' }, { kind: 'read', label: 'data/gaming.js' }],
       text: 'Outside work he travels, takes photographs and cooks at home. When he is in, it is Hitman, Call of Duty or The Last of Us.',
       fast: 'Travel, photography, home cooking and games.',
-      ctas: [['Open off the clock', '/off-the-clock.html'], ['Open gaming', '/gaming.html']],
+      ctas: [['Open off the clock', '/off-the-clock'], ['Open gaming', '/gaming']],
       followups: ['What games does he play?', 'How do I reach him?']
     })
   },
@@ -185,7 +185,7 @@ const intents = [
           text: `${ai.length} of his projects are AI and machine learning, from multimodal RAG for visual question answering to computer vision and recommendation systems. These three are the best place to start.`,
           fast: `${ai.length} AI projects; start with multimodal RAG.`,
           artifacts: [{ type: 'cards', items: byId(['rag', 'unimatch', 'drowsiness']) }],
-          ctas: [['Open all projects', '/projects.html']],
+          ctas: [['Open all projects', '/projects']],
           followups: ['Tell me about the RAG project', 'What is his tech stack?']
         };
       }
@@ -195,7 +195,7 @@ const intents = [
         text: `He has built ${projects.length} projects: ${counts[0]} in AI and machine learning, ${counts[1]} in data and ${counts[2]} tools. The multimodal RAG work is the strongest; SplitRight, built at a hackathon, is the most practical.`,
         fast: `${projects.length} projects; start with multimodal RAG.`,
         artifacts: [{ type: 'projects', items: projects }],
-        ctas: [['Open all projects', '/projects.html']],
+        ctas: [['Open all projects', '/projects']],
         followups: ['Tell me about the RAG project', 'Show me his AI projects', 'What is his stack?']
       };
     }
