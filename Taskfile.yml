@@ -1,0 +1,61 @@
+# Portfolio tasks — https://taskfile.dev
+# Install the runner once: brew install go-task
+# Then: `task` lists everything, `task dev` starts the site.
+
+version: '3'
+
+vars:
+  # Vite needs Node 18+, but the shell default may be older. Resolve the version in .nvmrc
+  # through nvm (installing it if missing), falling back to whatever `node` is on PATH.
+  NODE_BIN:
+    sh: >-
+      bash -c 'export NVM_DIR="${NVM_DIR:-$HOME/.nvm}";
+      if [ -s "$NVM_DIR/nvm.sh" ]; then . "$NVM_DIR/nvm.sh" && nvm install >/dev/null 2>&1 && dirname "$(nvm which current)";
+      else dirname "$(command -v node)"; fi'
+  # Task ignores PATH set under `env:`, so each command puts this Node first itself.
+  USE_NODE: export PATH="{{.NODE_BIN}}:$PATH"
+
+tasks:
+  default:
+    desc: List available tasks
+    cmds:
+      - task --list
+    silent: true
+
+  install:
+    desc: Install dependencies from package-lock.json
+    cmds:
+      - '{{.USE_NODE}} && npm ci'
+    sources:
+      - package.json
+      - package-lock.json
+    generates:
+      - node_modules/.package-lock.json
+
+  dev:
+    desc: Start the dev server with hot reload at http://127.0.0.1:5173
+    deps: [install]
+    cmds:
+      - '{{.USE_NODE}} && npm run dev'
+
+  build:
+    desc: Build the production site into dist/
+    deps: [install]
+    cmds:
+      - '{{.USE_NODE}} && npm run build'
+
+  preview:
+    desc: Build, then serve dist/ at http://127.0.0.1:4173
+    cmds:
+      - task: build
+      - '{{.USE_NODE}} && npm run preview'
+
+  clean:
+    desc: Remove the build output
+    cmds:
+      - rm -rf dist
+
+  node:
+    desc: Show which Node and npm the tasks use
+    cmds:
+      - '{{.USE_NODE}} && node -v && npm -v'

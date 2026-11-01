@@ -12,6 +12,7 @@ const pages = {
 };
 
 const navigation = [
+  ['/about', 'bi-person', 'About'],
   ['/projects', 'bi-grid', 'Side projects'],
   ['/experience', 'bi-git', 'Experience'],
   ['/gaming', 'bi-controller', 'Gaming'],
@@ -233,7 +234,7 @@ function CommandPalette({ close, navigate, ask }) {
   const inputRef = useRef(null);
   const q = query.trim().toLowerCase();
   const matches = (text) => text.toLowerCase().includes(q);
-  const goTo = [['/', 'bi-pencil-square', 'New chat'], ...navigation, ['/about', 'bi-person', 'About']]
+  const goTo = [['/', 'bi-pencil-square', 'New chat'], ...navigation]
     .filter(([, , label]) => matches(label)).map(([href, icon, label]) => ({ href, icon, label }));
   const projectItems = projects.filter((item) => matches(`${item.shortTitle} ${item.type} ${item.summary}`))
     .map((item) => ({ href: `/${item.route}`, label: item.shortTitle, image: item.image, meta: `${item.type} · ${projectGroups.find((group) => group.category === item.category).label}` }));

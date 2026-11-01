@@ -4,9 +4,21 @@ React portfolio built with Vite and deployed as a static site to GitHub Pages.
 
 ## Development
 
-Install dependencies and run the local development server:
+The project needs Node 18 or newer; `.nvmrc` pins Node 22. The easiest way to run it is with [Task](https://taskfile.dev), which picks the right Node through nvm for you:
 
 ```sh
+brew install go-task   # once
+task                   # list tasks
+task dev               # install dependencies if needed, then start the dev server
+task build             # production build into dist/
+task preview           # build, then serve dist/ at http://127.0.0.1:4173
+task clean             # remove dist/
+```
+
+Without Task, switch Node yourself first:
+
+```sh
+nvm use
 npm ci
 npm run dev
 ```
